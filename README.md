@@ -1,3 +1,2 @@
-# android_vendor_samsung_gprimeltecan
-
-Samsung Grand Prime [G530W] Vendor Tree
+# android_vendor_samsung_gprimeltevl
+Samsung Galaxy Grand Prime G530W Vendor Tree
