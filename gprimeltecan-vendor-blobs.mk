@@ -1,4 +1,4 @@
-PROPRIETARY_PATH := vendor/samsung/fortuna/proprietary
+PROPRIETARY_PATH := vendor/samsung/gprimeltecan/proprietary
 
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/adsprpcd:system/bin/adsprpcd \
