@@ -28,7 +28,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
 	$(PROPRIETARY_PATH)/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
 	$(PROPRIETARY_PATH)/etc/G08QU_imx219_module_info.xml:system/etc/G08QU_imx219_module_info.xml \
-	$(PROPRIETARY_PATH)/etc/media_codecs.xml:system/etc/media_codecs.xml \
 	$(PROPRIETARY_PATH)/etc/hcidump.sh:system/etc/hcidump.sh \
 	$(PROPRIETARY_PATH)/etc/hsic.control.bt.sh:system/etc/hsic.control.bt.sh \
 	$(PROPRIETARY_PATH)/etc/init.ath3k.bt.sh:system/etc/init.ath3k.bt.sh \
@@ -85,7 +84,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libAl_Awb_Sp.so:system/lib/libAl_Awb_Sp.so \
 	$(PROPRIETARY_PATH)/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
 	$(PROPRIETARY_PATH)/lib/libSamsungPreProcess.so:system/lib/libSamsungPreProcess.so \
-	$(PROPRIETARY_PATH)/lib/libSamsungPostProcess.so:system/lib/libSamsungPostProcess.so \
 	$(PROPRIETARY_PATH)/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so \
 	$(PROPRIETARY_PATH)/lib/lib_SamsungRec_V04012.so:system/lib/lib_SamsungRec_V04012.so \
 	$(PROPRIETARY_PATH)/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
@@ -113,7 +111,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libbt-iopdb_mod.so:system/lib/libbt-iopdb_mod.so \
 	$(PROPRIETARY_PATH)/lib/libcommon_time_client.so:system/lib/libcommon_time_client.so \
 	$(PROPRIETARY_PATH)/lib/libcordon.so:system/lib/libcordon.so \
-	$(PROPRIETARY_PATH)/lib/libdashplayer.so:system/lib/libdashplayer.so \
 	$(PROPRIETARY_PATH)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
 	$(PROPRIETARY_PATH)/lib/libexifa.so:system/lib/libexifa.so \
 	$(PROPRIETARY_PATH)/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
