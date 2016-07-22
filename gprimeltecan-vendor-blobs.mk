@@ -142,7 +142,8 @@ PRODUCT_COPY_FILES += \
 ##NFC
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/libnfc-sec-hal.conf:system/etc/libnfc-sec-hal.conf \
-	$(PROPRIETARY_PATH)/etc/libnfc-sec.conf:system/etc/libnfc-sec.conf
+	$(PROPRIETARY_PATH)/etc/libnfc-sec.conf:system/etc/libnfc-sec.conf \
+	$(PROPRIETARY_PATH)/etc/security_nfc_profile.dat:system/etc/security_nfc_profile.dat
 
 ## Graphics
 PRODUCT_COPY_FILES += \
