@@ -7,7 +7,7 @@ RED='\033[1;31m'
 NC='\033[0m' # No Color
 
 #get the list of files from the blob file
-FILE_LIST=`grep ':[A-Za-z]' $BLOB_FILE | cut -d ':' -f 1 | sed s/\$\(PROPRIETARY_PATH\)//g | sed s/[\\#\ ]//g`
+FILE_LIST=`grep ':[A-Za-z]' $BLOB_FILE | cut -d ':' -f 1 | sed s/\$\(PROPRIETARY_PATH\)//g | sed s/[#\ ]//g`
 
 #create the proprietary dir
 mkdir $PROP_DIR -p
