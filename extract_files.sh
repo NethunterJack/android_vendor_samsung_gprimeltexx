@@ -8,7 +8,7 @@ BLUE='\033[1;35m'
 NC='\033[0m' # No Color
 
 if [ -z $1 ]; then
-    echo "Usage $0 [/path/to/system/root]"
+    echo "Usage $0 [/path/to/system_root]"
 fi 
 
 
