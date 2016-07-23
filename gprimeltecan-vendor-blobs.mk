@@ -42,6 +42,34 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
 	$(PROPRIETARY_PATH)/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
 	$(PROPRIETARY_PATH)/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
+	$(PROPRIETARY_PATH)/cameradata/ThemeShot/MaskInfo_v2_download.conf:system/cameradata/ThemeShot/MaskInfo_v2_download.conf \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libcartoon.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libcartoon.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libfadedcolours.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libfadedcolours.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libfisheye.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libfisheye.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libgreyscale.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libgreyscale.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libmoody.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libmoody.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.liboilpastel.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.liboilpastel.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.librugged.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.librugged.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libsepia.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libsepia.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libtint.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libtint.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libturquoise.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libturquoise.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libvignette.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libvignette.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libvintage.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libvintage.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libcartoon.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libcartoon.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libfadedcolours.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libfadedcolours.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libfisheye.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libfisheye.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libgreyscale.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libgreyscale.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libmoody.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libmoody.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.liboilpastel.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.liboilpastel.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.librugged.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.librugged.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libsepia.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libsepia.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libtint.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libtint.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libturquoise.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libturquoise.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libvignette.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libvignette.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libvintage.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libvintage.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/internal_filter.xml:system/cameradata/preloadfilters/internal_filter.xml \
+	$(PROPRIETARY_PATH)/cameradata/secvision/golfShot/golf_shot_icon.png:system/cameradata/secvision/golfShot/golf_shot_icon.png \
+	$(PROPRIETARY_PATH)/cameradata/secvision/soundshot/sound_shot_icon.png:system/cameradata/secvision/soundshot/sound_shot_icon.png \
 	$(PROPRIETARY_PATH)/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
 	$(PROPRIETARY_PATH)/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
 	$(PROPRIETARY_PATH)/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
@@ -160,7 +188,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/libnfc-sec-hal.conf:system/etc/libnfc-sec-hal.conf \
 	$(PROPRIETARY_PATH)/etc/libnfc-sec.conf:system/etc/libnfc-sec.conf \
-	$(PROPRIETARY_PATH)/etc/security_nfc_profile.dat:system/etc/security_nfc_profile.dat
+	$(PROPRIETARY_PATH)/etc/security_nfc_profile.dat:system/etc/security_nfc_profile.dat \
+	$(PROPRIETARY_PATH)/etc/sec_s3fwrn5_rfreg.bin:system/etc/sec_s3fwrn5_rfreg.bin
 
 ## Graphics
 PRODUCT_COPY_FILES += \
@@ -234,8 +263,8 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 
 # Hardware
+#	$(PROPRIETARY_PATH)/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so \
 PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so \
 	$(PROPRIETARY_PATH)/lib/hw/nfc_nci.msm8916.so:system/lib/hw/nfc_nci.msm8916.so
 
 # Perf
@@ -314,7 +343,11 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so
+	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
+	$(PROPRIETARY_PATH)/etc/mcc_otalookup.xml:system/etc/mcc_otalookup.xml \
+	$(PROPRIETARY_PATH)/etc/epdg_apns_conf.xml:system/etc/epdg_apns_conf.xml \
+	$(PROPRIETARY_PATH)/etc/plmn_delta.bin:system/etc/plmn_delta.bin \
+	$(PROPRIETARY_PATH)/etc/srm.bin:system/etc/srm.bin
 	
 # RIL
 PRODUCT_COPY_FILES += \
@@ -376,6 +409,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libaudiosa.so:system/lib/libaudiosa.so \
 	$(PROPRIETARY_PATH)/lib/libdashplayer.so:system/lib/libdashplayer.so \
 	$(PROPRIETARY_PATH)/lib/lib_DNSe_NRSS_ver226.so:system/lib/lib_DNSe_NRSS_ver226.so \
+    $(PROPRIETARY_PATH)/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so \
 	$(PROPRIETARY_PATH)/lib/lib_SA_GoogleFX_ver119k.so:system/lib/lib_SA_GoogleFX_ver119k.so \
 	$(PROPRIETARY_PATH)/lib/lib_Samsung_AudioZoom_v102.so:system/lib/lib_Samsung_AudioZoom_v102.so \
 	$(PROPRIETARY_PATH)/lib/libmysound.so:system/lib/libmysound.so \
@@ -639,6 +673,185 @@ PRODUCT_COPY_FILES += \
 #	$(PROPRIETARY_PATH)/firmware/image/widevine.b03:system/etc/firmware/widevine.b03 \
 #	$(PROPRIETARY_PATH)/firmware/image/widevine.mdt:system/etc/firmware/widevine.mdt
 
+
+##################################
+
+#	$(PROPRIETARY_PATH)/lib/libarac.so:system/lib/libarac.so \
+#	$(PROPRIETARY_PATH)/lib/libarccamera.so:system/lib/libarccamera.so \
+#	$(PROPRIETARY_PATH)/lib/libarcplatform.so:system/lib/libarcplatform.so \
+#	$(PROPRIETARY_PATH)/lib/libarcsoft_night_shot_ex.so:system/lib/libarcsoft_night_shot_ex.so \
+#	$(PROPRIETARY_PATH)/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
+#	$(PROPRIETARY_PATH)/lib/libarcsoft_picaction.so:system/lib/libarcsoft_picaction.so \
+#	$(PROPRIETARY_PATH)/lib/libarcsoft_selfie_camera_lite.so:system/lib/libarcsoft_selfie_camera_lite.so \
+#	$(PROPRIETARY_PATH)/lib/libarcsoft_sensorndk.so:system/lib/libarcsoft_sensorndk.so \
+#	$(PROPRIETARY_PATH)/lib/libarcsoft_wideselfie.so:system/lib/libarcsoft_wideselfie.so \
+#	$(PROPRIETARY_PATH)/lib/libasf_fileshareserver.so:system/lib/libasf_fileshareserver.so \
+#	$(PROPRIETARY_PATH)/lib/libasf_fileshare.so:system/lib/libasf_fileshare.so \
+#	$(PROPRIETARY_PATH)/lib/libasf_mediaserver.so:system/lib/libasf_mediaserver.so \
+#	$(PROPRIETARY_PATH)/lib/libasf_mediashare.so:system/lib/libasf_mediashare.so \
+#	$(PROPRIETARY_PATH)/lib/libatomcore.so:system/lib/libatomcore.so \
+#	$(PROPRIETARY_PATH)/lib/libatomjpeg.so:system/lib/libatomjpeg.so \
+#	$(PROPRIETARY_PATH)/lib/libAutoEnhance.so:system/lib/libAutoEnhance.so \
+#	$(PROPRIETARY_PATH)/lib/libbbcopenssl.so:system/lib/libbbcopenssl.so \
+#	$(PROPRIETARY_PATH)/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
+#	$(PROPRIETARY_PATH)/lib/libbt-codec_aptx.so:system/lib/libbt-codec_aptx.so \
+#	$(PROPRIETARY_PATH)/lib/libbt-codec_sshd.so:system/lib/libbt-codec_sshd.so \
+#	$(PROPRIETARY_PATH)/lib/libbt-iopdb_mod.so:system/lib/libbt-iopdb_mod.so \
+#	$(PROPRIETARY_PATH)/lib/libbt-iopdb.so:system/lib/libbt-iopdb.so \
+#	$(PROPRIETARY_PATH)/lib/libcc_manager.so:system/lib/libcc_manager.so \
+#	$(PROPRIETARY_PATH)/lib/libcharon.so:system/lib/libcharon.so \
+#	$(PROPRIETARY_PATH)/lib/libchord-v1.5.so:system/lib/libchord-v1.5.so \
+#	$(PROPRIETARY_PATH)/lib/libCMLads.so:system/lib/libCMLads.so \
+#	$(PROPRIETARY_PATH)/lib/libcommonpawrapper.so:system/lib/libcommonpawrapper.so \
+#	$(PROPRIETARY_PATH)/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
+#	$(PROPRIETARY_PATH)/lib/libcpve-client.so:system/lib/libcpve-client.so \
+#	$(PROPRIETARY_PATH)/lib/libCryptionkey.so:system/lib/libCryptionkey.so \
+#	$(PROPRIETARY_PATH)/lib/libdiagmonagent.so:system/lib/libdiagmonagent.so \
+#	$(PROPRIETARY_PATH)/lib/libdirencryption.so:system/lib/libdirencryption.so \
+#	$(PROPRIETARY_PATH)/lib/libdmcFaceEngine.so:system/lib/libdmcFaceEngine.so \
+#	$(PROPRIETARY_PATH)/lib/libdmcMVFD.so:system/lib/libdmcMVFD.so \
+#	$(PROPRIETARY_PATH)/lib/libdmcSmartDP.so:system/lib/libdmcSmartDP.so \
+#	$(PROPRIETARY_PATH)/lib/libdmcSmartUX.so:system/lib/libdmcSmartUX.so \
+#	$(PROPRIETARY_PATH)/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so \
+#	$(PROPRIETARY_PATH)/lib/libdocservice.so:system/lib/libdocservice.so \
+#	$(PROPRIETARY_PATH)/lib/libdprw.so:system/lib/libdprw.so \
+#	$(PROPRIETARY_PATH)/lib/libdrawglfunction.so:system/lib/libdrawglfunction.so \
+#	$(PROPRIETARY_PATH)/lib/libedmnativehelperservice.so:system/lib/libedmnativehelperservice.so \
+#	$(PROPRIETARY_PATH)/lib/libedmnativehelper.so:system/lib/libedmnativehelper.so \
+#	$(PROPRIETARY_PATH)/lib/libepm.so:system/lib/libepm.so \
+#	$(PROPRIETARY_PATH)/lib/libexfat_utils.so:system/lib/libexfat_utils.so \
+#	$(PROPRIETARY_PATH)/lib/libfacerecognition.so:system/lib/libfacerecognition.so \
+#	$(PROPRIETARY_PATH)/lib/libface.so:system/lib/libface.so \
+#	$(PROPRIETARY_PATH)/lib/libfilterpack_facedetect.so:system/lib/libfilterpack_facedetect.so \
+#	$(PROPRIETARY_PATH)/lib/libgdmcprov.so:system/lib/libgdmcprov.so \
+#	$(PROPRIETARY_PATH)/lib/libhydra.so:system/lib/libhydra.so \
+#	$(PROPRIETARY_PATH)/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
+#	$(PROPRIETARY_PATH)/lib/libInteractivePanoramaUtil.so:system/lib/libInteractivePanoramaUtil.so \
+#	$(PROPRIETARY_PATH)/lib/libk2ViewerJni.so:system/lib/libk2ViewerJni.so \
+#	$(PROPRIETARY_PATH)/lib/libkerberos.so:system/lib/libkerberos.so \
+#	$(PROPRIETARY_PATH)/lib/libkeyutils.so:system/lib/libkeyutils.so \
+#	$(PROPRIETARY_PATH)/lib/libklmsopenssl.so:system/lib/libklmsopenssl.so \
+#	$(PROPRIETARY_PATH)/lib/liblicenseopenssl.so:system/lib/liblicenseopenssl.so \
+#	$(PROPRIETARY_PATH)/lib/liblifevibes_mediashare_sw_jni.so:system/lib/liblifevibes_mediashare_sw_jni.so \
+#	$(PROPRIETARY_PATH)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+#	$(PROPRIETARY_PATH)/lib/libmaet.so:system/lib/libmaet.so \
+#	$(PROPRIETARY_PATH)/lib/libMcClient.so:system/lib/libMcClient.so \
+#	$(PROPRIETARY_PATH)/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
+#	$(PROPRIETARY_PATH)/lib/libMMFW_scone_stub.so:system/lib/libMMFW_scone_stub.so \
+#	$(PROPRIETARY_PATH)/lib/libMP4Converter.so:system/lib/libMP4Converter.so \
+#	$(PROPRIETARY_PATH)/lib/libmtp_samsung_jni.so:system/lib/libmtp_samsung_jni.so \
+#	$(PROPRIETARY_PATH)/lib/libmtp_samsung.so:system/lib/libmtp_samsung.so \
+#	$(PROPRIETARY_PATH)/lib/libnativemr.so:system/lib/libnativemr.so \
+#	$(PROPRIETARY_PATH)/lib/libnvaccessor_fb.so:system/lib/libnvaccessor_fb.so \
+#	$(PROPRIETARY_PATH)/lib/libomacp.so:system/lib/libomacp.so \
+#	$(PROPRIETARY_PATH)/lib/libomafldrm.so:system/lib/libomafldrm.so \
+#	$(PROPRIETARY_PATH)/lib/libOpensslReg.so:system/lib/libOpensslReg.so \
+#	$(PROPRIETARY_PATH)/lib/libopensslsmime.so:system/lib/libopensslsmime.so \
+#	$(PROPRIETARY_PATH)/lib/libpadm.so:system/lib/libpadm.so \
+#	$(PROPRIETARY_PATH)/lib/libpersona.so:system/lib/libpersona.so \
+#	$(PROPRIETARY_PATH)/lib/libphotoeditorEngine.so:system/lib/libphotoeditorEngine.so \
+#	$(PROPRIETARY_PATH)/lib/libplayready_v2.5.so:system/lib/libplayready_v2.5.so \
+#	$(PROPRIETARY_PATH)/lib/libpparam.so:system/lib/libpparam.so \
+#	$(PROPRIETARY_PATH)/lib/lib_PreGainBooster_ver104.so:system/lib/lib_PreGainBooster_ver104.so \
+#	$(PROPRIETARY_PATH)/lib/libprintspooler_jni_mr1.so:system/lib/libprintspooler_jni_mr1.so \
+#	$(PROPRIETARY_PATH)/lib/libqcomfm_jni.so:system/lib/libqcomfm_jni.so \
+#	$(PROPRIETARY_PATH)/lib/libqjpegforphotoeditor.so:system/lib/libqjpegforphotoeditor.so \
+#	$(PROPRIETARY_PATH)/lib/libqjpeg_secvision.so:system/lib/libqjpeg_secvision.so \
+#	$(PROPRIETARY_PATH)/lib/libQjpeg.so:system/lib/libQjpeg.so \
+#	$(PROPRIETARY_PATH)/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
+#	$(PROPRIETARY_PATH)/lib/libquramagifencoder_L.so:system/lib/libquramagifencoder_L.so \
+#	$(PROPRIETARY_PATH)/lib/libquramimagecodec.so:system/lib/libquramimagecodec.so \
+#	$(PROPRIETARY_PATH)/lib/libquramresize.so:system/lib/libquramresize.so \
+#	$(PROPRIETARY_PATH)/lib/libsaiv_codec.so:system/lib/libsaiv_codec.so \
+#	$(PROPRIETARY_PATH)/lib/libsAMRNB.so:system/lib/libsAMRNB.so \
+#	$(PROPRIETARY_PATH)/lib/libsAMRWB.so:system/lib/libsAMRWB.so \
+#	$(PROPRIETARY_PATH)/lib/lib_SamsungVAD_v01008.so:system/lib/lib_SamsungVAD_v01008.so \
+#	$(PROPRIETARY_PATH)/lib/libsavsac.so:system/lib/libsavsac.so \
+#	$(PROPRIETARY_PATH)/lib/libsavscmn.so:system/lib/libsavscmn.so \
+#	$(PROPRIETARY_PATH)/lib/libsavsff.so:system/lib/libsavsff.so \
+#	$(PROPRIETARY_PATH)/lib/libsavsmeta.so:system/lib/libsavsmeta.so \
+#	$(PROPRIETARY_PATH)/lib/libsavsvc.so:system/lib/libsavsvc.so \
+#	$(PROPRIETARY_PATH)/lib/libsccore_csc.so:system/lib/libsccore_csc.so \
+#	$(PROPRIETARY_PATH)/lib/libsdp_crypto.so:system/lib/libsdp_crypto.so \
+#	$(PROPRIETARY_PATH)/lib/libsdp_kekm.so:system/lib/libsdp_kekm.so \
+#	$(PROPRIETARY_PATH)/lib/libsdp_sdk.so:system/lib/libsdp_sdk.so \
+#	$(PROPRIETARY_PATH)/lib/libseams_binder.so:system/lib/libseams_binder.so \
+#	$(PROPRIETARY_PATH)/lib/libseccameracore.so:system/lib/libseccameracore.so \
+#	$(PROPRIETARY_PATH)/lib/libseccameraeffect.so:system/lib/libseccameraeffect.so \
+#	$(PROPRIETARY_PATH)/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
+#	$(PROPRIETARY_PATH)/lib/libsec_devenc.so:system/lib/libsec_devenc.so \
+#	$(PROPRIETARY_PATH)/lib/libsec_ecryptfs.so:system/lib/libsec_ecryptfs.so \
+#	$(PROPRIETARY_PATH)/lib/libSecEDSVendorBase.so:system/lib/libSecEDSVendorBase.so \
+#	$(PROPRIETARY_PATH)/lib/libSecExternalDisplayinterface.so:system/lib/libSecExternalDisplayinterface.so \
+#	$(PROPRIETARY_PATH)/lib/libSecExternalDisplay_jni.so:system/lib/libSecExternalDisplay_jni.so \
+#	$(PROPRIETARY_PATH)/lib/libSecExternalDisplayservice.so:system/lib/libSecExternalDisplayservice.so \
+#	$(PROPRIETARY_PATH)/lib/libsecface.so:system/lib/libsecface.so \
+#	$(PROPRIETARY_PATH)/lib/libsecfips.so:system/lib/libsecfips.so \
+#	$(PROPRIETARY_PATH)/lib/libsecimaging.so:system/lib/libsecimaging.so \
+#	$(PROPRIETARY_PATH)/lib/libSECIMSJni.so:system/lib/libSECIMSJni.so \
+#	$(PROPRIETARY_PATH)/lib/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
+#	$(PROPRIETARY_PATH)/lib/libsecjpegquram.so:system/lib/libsecjpegquram.so \
+#	$(PROPRIETARY_PATH)/lib/libseckeyprov.so:system/lib/libseckeyprov.so \
+#	$(PROPRIETARY_PATH)/lib/libsec_km.so:system/lib/libsec_km.so \
+#	$(PROPRIETARY_PATH)/lib/libsecmediarecorder_jni.so:system/lib/libsecmediarecorder_jni.so \
+#	$(PROPRIETARY_PATH)/lib/libsec_migration.so:system/lib/libsec_migration.so \
+#	$(PROPRIETARY_PATH)/lib/libSecMMCodec.so:system/lib/libSecMMCodec.so \
+#	$(PROPRIETARY_PATH)/lib/libsec_ode_km.so:system/lib/libsec_ode_km.so \
+#	$(PROPRIETARY_PATH)/lib/libsecopenssl_engine.so:system/lib/libsecopenssl_engine.so \
+#	$(PROPRIETARY_PATH)/lib/libsecpkcs11_engine.so:system/lib/libsecpkcs11_engine.so \
+#	$(PROPRIETARY_PATH)/lib/libsecuibc.so:system/lib/libsecuibc.so \
+#	$(PROPRIETARY_PATH)/lib/libsecure_storage_jni.so:system/lib/libsecure_storage_jni.so \
+#	$(PROPRIETARY_PATH)/lib/libsecure_storage.so:system/lib/libsecure_storage.so \
+#	$(PROPRIETARY_PATH)/lib/libSEF4MP4.so:system/lib/libSEF4MP4.so \
+#	$(PROPRIETARY_PATH)/lib/libSEF.so:system/lib/libSEF.so \
+#	$(PROPRIETARY_PATH)/lib/libSensoryBargeInEngine.so:system/lib/libSensoryBargeInEngine.so \
+#	$(PROPRIETARY_PATH)/lib/libServiceKey.so:system/lib/libServiceKey.so \
+#	$(PROPRIETARY_PATH)/lib/libsetproperty.so:system/lib/libsetproperty.so \
+#	$(PROPRIETARY_PATH)/lib/libsfextaac.so:system/lib/libsfextaac.so \
+#	$(PROPRIETARY_PATH)/lib/libsfextavi.so:system/lib/libsfextavi.so \
+#	$(PROPRIETARY_PATH)/lib/libsfextcmn.so:system/lib/libsfextcmn.so \
+#	$(PROPRIETARY_PATH)/lib/libsfextcp.so:system/lib/libsfextcp.so \
+#	$(PROPRIETARY_PATH)/lib/libsfextflac.so:system/lib/libsfextflac.so \
+#	$(PROPRIETARY_PATH)/lib/libsfextflv.so:system/lib/libsfextflv.so \
+#	$(PROPRIETARY_PATH)/lib/libsfextmkv.so:system/lib/libsfextmkv.so \
+#	$(PROPRIETARY_PATH)/lib/libsfextmp4f.so:system/lib/libsfextmp4f.so \
+#	$(PROPRIETARY_PATH)/lib/libsfextrmf.so:system/lib/libsfextrmf.so \
+#	$(PROPRIETARY_PATH)/lib/libsfextwmf.so:system/lib/libsfextwmf.so \
+#	$(PROPRIETARY_PATH)/lib/libSgi.so:system/lib/libSgi.so \
+#	$(PROPRIETARY_PATH)/lib/libshdace.so:system/lib/libshdace.so \
+#	$(PROPRIETARY_PATH)/lib/libsimageis_jni.so:system/lib/libsimageis_jni.so \
+#	$(PROPRIETARY_PATH)/lib/libsnaace.so:system/lib/libsnaace.so \
+#	$(PROPRIETARY_PATH)/lib/libsnamrnb.so:system/lib/libsnamrnb.so \
+#	$(PROPRIETARY_PATH)/lib/libsnamrwb.so:system/lib/libsnamrwb.so \
+#	$(PROPRIETARY_PATH)/lib/libsomp.so:system/lib/libsomp.so \
+#	$(PROPRIETARY_PATH)/lib/libsomx263dsw.so:system/lib/libsomx263dsw.so \
+#	$(PROPRIETARY_PATH)/lib/libsomx264dsw.so:system/lib/libsomx264dsw.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxaace.so:system/lib/libsomxaace.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxadpcmd.so:system/lib/libsomxadpcmd.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxcmn.so:system/lib/libsomxcmn.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxcore.so:system/lib/libsomxcore.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxflacd.so:system/lib/libsomxflacd.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxhevcdsw.so:system/lib/libsomxhevcdsw.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxmp43d.so:system/lib/libsomxmp43d.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxmp4vdsw.so:system/lib/libsomxmp4vdsw.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxnaace.so:system/lib/libsomxnaace.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxsr263d.so:system/lib/libsomxsr263d.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxvc1dsw.so:system/lib/libsomxvc1dsw.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxvencsw.so:system/lib/libsomxvencsw.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \
+#	$(PROPRIETARY_PATH)/lib/libsoundalive.so:system/lib/libsoundalive.so \
+#	$(PROPRIETARY_PATH)/lib/libSoundAlive_VSP_ver315b_arm.so:system/lib/libSoundAlive_VSP_ver315b_arm.so \
+#	$(PROPRIETARY_PATH)/lib/libsoundspeed.so:system/lib/libsoundspeed.so \
+#	$(PROPRIETARY_PATH)/lib/libsupershot.so:system/lib/libsupershot.so \
+
+##################################
+
 ##	$(PROPRIETARY_PATH)/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
 ##	$(PROPRIETARY_PATH)/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
 ##	$(PROPRIETARY_PATH)/app/TimeService/TimeService.apk:system/app/TimeService/TimeService.apk
@@ -654,7 +867,7 @@ PRODUCT_COPY_FILES += \
 ##   $(PROPRIETARY_PATH)/lib/libtinycompress.so:system/lib/libtinycompress.so \ 	
 ##	$(PROPRIETARY_PATH)/lib/libaudioutils.so:system/lib/libaudioutils.so \
 ##   $(PROPRIETARY_PATH)/lib/lib_SoundAlive_ver118t.so:system/lib/lib_SoundAlive_ver118t.so \
-##   $(PROPRIETARY_PATH)/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so
+
 ##   $(PROPRIETARY_PATH)/lib/soundfx/libldnhncr.so:system/lib/soundfx/libldnhncr.so \
 ##   $(PROPRIETARY_PATH)/lib/soundfx/libdownmix.so:system/lib/soundfx/libdownmix.so \
 ##   $(PROPRIETARY_PATH)/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
