@@ -11,5 +11,18 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 include $(BUILD_PREBUILT)
 
+######################
+### libril
+include $(CLEAR_VARS)
+LOCAL_MODULE       := libril
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_OWNER := samsung
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_SRC_FILES    := proprietary/lib/libril.so
+include $(BUILD_PREBUILT)
+
+######################
+
 endif
 
