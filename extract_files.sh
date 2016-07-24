@@ -24,7 +24,8 @@ if [ -z $1 ]; then
   adb pull /system/$i $PROP_DIR/$i
 else
   echo -e ${RED} "Copying ${BLUE}$1/$i ... to $PROP_DIR$i " ${NC}
-  cp -ndR $1/$i $PROP_DIR/$i
+  mkdir $PROP_DIR/`dirname $i` -p
+  cp -n $1/$i $PROP_DIR/$i
 fi 
 
 
