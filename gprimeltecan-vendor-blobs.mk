@@ -304,10 +304,6 @@ PRODUCT_COPY_FILES += \
 
 #Misc (Qualcomm?)
 PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/bin/bintvoutservice:system/bin/bintvoutservice \
-	$(PROPRIETARY_PATH)/bin/wfdservice:system/bin/wfdservice \
-	$(PROPRIETARY_PATH)/bin/at_distributor:system/bin/at_distributor \
-	$(PROPRIETARY_PATH)/bin/diag_uart_log:system/bin/diag_uart_log \
 	$(PROPRIETARY_PATH)/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
 	$(PROPRIETARY_PATH)/vendor/bin/sound_trigger_test:system/vendor/bin/sound_trigger_test \
 	$(PROPRIETARY_PATH)/vendor/firmware/sec_s3fwrn5_firmware.bin:system/vendor/firmware/sec_s3fwrn5_firmware.bin \
@@ -369,9 +365,17 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libsec-ril.so:system/lib/libsec-ril.so \
 	$(PROPRIETARY_PATH)/lib/libsecril-client.so:system/lib/libsecril-client.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
-	
+
 # Radio
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/bin/ddexe:system/bin/ddexe \
+	$(PROPRIETARY_PATH)/bin/smdexe:system/bin/smdexe \
+	$(PROPRIETARY_PATH)/bin/connfwexe:system/bin/connfwexe \
+	$(PROPRIETARY_PATH)/bin/diag_mdlog:system/bin/diag_mdlog \
+	$(PROPRIETARY_PATH)/bin/bintvoutservice:system/bin/bintvoutservice \
+	$(PROPRIETARY_PATH)/bin/wfdservice:system/bin/wfdservice \
+	$(PROPRIETARY_PATH)/bin/at_distributor:system/bin/at_distributor \
+	$(PROPRIETARY_PATH)/bin/diag_uart_log:system/bin/diag_uart_log \
 	$(PROPRIETARY_PATH)/bin/netmgrd:system/bin/netmgrd \
 	$(PROPRIETARY_PATH)/bin/qmiproxy:system/bin/qmiproxy \
 	$(PROPRIETARY_PATH)/bin/qmuxd:system/bin/qmuxd \
