@@ -179,6 +179,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/irsc_util:system/bin/irsc_util \
 	$(PROPRIETARY_PATH)/bin/loc_launcher:system/bin/loc_launcher \
+	$(PROPRIETARY_PATH)/lib/libgps.utils.so:system/lib/libgps.utils.so \
+	$(PROPRIETARY_PATH)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+	$(PROPRIETARY_PATH)/lib/libloc_core.so:system/lib/libloc_core.so \
+	$(PROPRIETARY_PATH)/lib/libloc_eng.so:system/lib/libloc_eng.so \
+	$(PROPRIETARY_PATH)/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
 	$(PROPRIETARY_PATH)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
@@ -299,6 +304,10 @@ PRODUCT_COPY_FILES += \
 
 #Misc (Qualcomm?)
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/bin/bintvoutservice:system/bin/bintvoutservice \
+	$(PROPRIETARY_PATH)/bin/wfdservice:system/bin/wfdservice \
+	$(PROPRIETARY_PATH)/bin/at_distributor:system/bin/at_distributor \
+	$(PROPRIETARY_PATH)/bin/diag_uart_log:system/bin/diag_uart_log \
 	$(PROPRIETARY_PATH)/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
 	$(PROPRIETARY_PATH)/vendor/bin/sound_trigger_test:system/vendor/bin/sound_trigger_test \
 	$(PROPRIETARY_PATH)/vendor/firmware/sec_s3fwrn5_firmware.bin:system/vendor/firmware/sec_s3fwrn5_firmware.bin \
@@ -352,9 +361,13 @@ PRODUCT_COPY_FILES += \
 # RIL
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+	$(PROPRIETARY_PATH)/bin/rild:system/bin/rild \
+	$(PROPRIETARY_PATH)/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
+	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/lib/libreference-ril.so \
+	$(PROPRIETARY_PATH)/lib/libril.so:system/lib/libril.so \
+	$(PROPRIETARY_PATH)/lib/librilutils.so:system/lib/librilutils.so \
 	$(PROPRIETARY_PATH)/lib/libsec-ril.so:system/lib/libsec-ril.so \
 	$(PROPRIETARY_PATH)/lib/libsecril-client.so:system/lib/libsecril-client.so \
-	$(PROPRIETARY_PATH)/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
 	
 # Radio
@@ -733,7 +746,6 @@ PRODUCT_COPY_FILES += \
 #	$(PROPRIETARY_PATH)/lib/libklmsopenssl.so:system/lib/libklmsopenssl.so \
 #	$(PROPRIETARY_PATH)/lib/liblicenseopenssl.so:system/lib/liblicenseopenssl.so \
 #	$(PROPRIETARY_PATH)/lib/liblifevibes_mediashare_sw_jni.so:system/lib/liblifevibes_mediashare_sw_jni.so \
-#	$(PROPRIETARY_PATH)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
 #	$(PROPRIETARY_PATH)/lib/libmaet.so:system/lib/libmaet.so \
 #	$(PROPRIETARY_PATH)/lib/libMcClient.so:system/lib/libMcClient.so \
 #	$(PROPRIETARY_PATH)/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
@@ -867,7 +879,6 @@ PRODUCT_COPY_FILES += \
 ##   $(PROPRIETARY_PATH)/lib/libtinycompress.so:system/lib/libtinycompress.so \ 	
 ##	$(PROPRIETARY_PATH)/lib/libaudioutils.so:system/lib/libaudioutils.so \
 ##   $(PROPRIETARY_PATH)/lib/lib_SoundAlive_ver118t.so:system/lib/lib_SoundAlive_ver118t.so \
-
 ##   $(PROPRIETARY_PATH)/lib/soundfx/libldnhncr.so:system/lib/soundfx/libldnhncr.so \
 ##   $(PROPRIETARY_PATH)/lib/soundfx/libdownmix.so:system/lib/soundfx/libdownmix.so \
 ##   $(PROPRIETARY_PATH)/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
