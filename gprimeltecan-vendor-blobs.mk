@@ -369,7 +369,9 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/mcc_otalookup.xml:system/etc/mcc_otalookup.xml \
 	$(PROPRIETARY_PATH)/etc/epdg_apns_conf.xml:system/etc/epdg_apns_conf.xml \
 	$(PROPRIETARY_PATH)/etc/plmn_delta.bin:system/etc/plmn_delta.bin \
-	$(PROPRIETARY_PATH)/etc/srm.bin:system/etc/srm.bin
+	$(PROPRIETARY_PATH)/etc/srm.bin:system/etc/srm.bin \
+	$(PROPRIETARY_PATH)/lib/libmtp_samsung_jni.so:system/lib/libmtp_samsung_jni.so \
+	$(PROPRIETARY_PATH)/lib/libmtp_samsung.so:system/lib/libmtp_samsung.so
 	
 # RIL
 PRODUCT_COPY_FILES += \
@@ -390,7 +392,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/connfwexe:system/bin/connfwexe \
 	$(PROPRIETARY_PATH)/bin/diag_mdlog:system/bin/diag_mdlog \
 	$(PROPRIETARY_PATH)/bin/bintvoutservice:system/bin/bintvoutservice \
-	$(PROPRIETARY_PATH)/bin/wfdservice:system/bin/wfdservice \
 	$(PROPRIETARY_PATH)/bin/at_distributor:system/bin/at_distributor \
 	$(PROPRIETARY_PATH)/bin/diag_uart_log:system/bin/diag_uart_log \
 	$(PROPRIETARY_PATH)/bin/netmgrd:system/bin/netmgrd \
@@ -507,208 +508,59 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/firmware/image/keymaste.b01:system/vendor/firmware/keymaster/keymaster.b01 \
 	$(PROPRIETARY_PATH)/firmware/image/keymaste.b02:system/vendor/firmware/keymaster/keymaster.b02 \
 	$(PROPRIETARY_PATH)/firmware/image/keymaste.b03:system/vendor/firmware/keymaster/keymaster.b03 \
-	$(PROPRIETARY_PATH)/firmware/image/keymaste.mdt:system/vendor/firmware/keymaster/keymaster.mdt \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/sbm/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/sbm/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/comb_att/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/comb_att/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/eps_only/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/eps_only/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/comb_att/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/comb_att/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/eps_only/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/eps_only/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/comb_att/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/comb_att/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/eps_only/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/eps_only/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/comb_att/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/comb_att/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/eps_only/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/eps_only/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/comb_att/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/comb_att/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/eps_only/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/eps_only/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/comb_att/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/comb_att/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/eps_only/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/eps_only/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/3g/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/3g/ss/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsda/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsda/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsds/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_eps/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_eps/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_no_/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_no_/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/ss/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/dsda/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/dsda/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/ss/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/drds/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/drds/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsda/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsda/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsds/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/ss/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/default/default/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/default/default/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/us_cellu/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/us_cellu/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/w_one/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/w_one/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/3g/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/3g/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/volte/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/volte/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/ecsfb/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/ecsfb/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/1xsrlte/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/1xsrlte/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn \
-	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/svlte/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/svlte/mcfg_sw.mbn
+	$(PROPRIETARY_PATH)/firmware/image/keymaste.mdt:system/vendor/firmware/keymaster/keymaster.mdt
+	
+###############################################################################
 
-#	$(PROPRIETARY_PATH)/firmware/image/cmnlib.b00:system/etc/firmware/cmnlib.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/cmnlib.b01:system/etc/firmware/cmnlib.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/cmnlib.b02:system/etc/firmware/cmnlib.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/cmnlib.b03:system/etc/firmware/cmnlib.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/cmnlib.mdt:system/etc/firmware/cmnlib.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/dmverity.b00:system/etc/firmware/dmverity.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/dmverity.b01:system/etc/firmware/dmverity.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/dmverity.b02:system/etc/firmware/dmverity.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/dmverity.b03:system/etc/firmware/dmverity.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/dmverity.mdt:system/etc/firmware/dmverity.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/isdbtmm.b00:system/etc/firmware/isdbtmm.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/isdbtmm.b01:system/etc/firmware/isdbtmm.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/isdbtmm.b02:system/etc/firmware/isdbtmm.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/isdbtmm.b03:system/etc/firmware/isdbtmm.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/isdbtmm.mdt:system/etc/firmware/isdbtmm.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/keymaste.b00:system/etc/firmware/keymaste.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/keymaste.b01:system/etc/firmware/keymaste.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/keymaste.b02:system/etc/firmware/keymaste.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/keymaste.b03:system/etc/firmware/keymaste.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/keymaste.mdt:system/etc/firmware/keymaste.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/kiwi.b00:system/etc/firmware/kiwi.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/kiwi.b01:system/etc/firmware/kiwi.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/kiwi.b02:system/etc/firmware/kiwi.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/kiwi.b03:system/etc/firmware/kiwi.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/kiwi.mdt:system/etc/firmware/kiwi.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/mba.mbn:system/etc/firmware/mba.mbn \
-#	$(PROPRIETARY_PATH)/firmware/image/mcpay.b00:system/etc/firmware/mcpay.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/mcpay.b01:system/etc/firmware/mcpay.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/mcpay.b02:system/etc/firmware/mcpay.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/mcpay.b03:system/etc/firmware/mcpay.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/mcpay.mdt:system/etc/firmware/mcpay.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/mldap.b00:system/etc/firmware/mldap.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/mldap.b01:system/etc/firmware/mldap.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/mldap.b02:system/etc/firmware/mldap.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/mldap.b03:system/etc/firmware/mldap.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/mldap.mdt:system/etc/firmware/mldap.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b00:system/etc/firmware/modem.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b01:system/etc/firmware/modem.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b02:system/etc/firmware/modem.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b03:system/etc/firmware/modem.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b04:system/etc/firmware/modem.b04 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b05:system/etc/firmware/modem.b05 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b06:system/etc/firmware/modem.b06 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b07:system/etc/firmware/modem.b07 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b08:system/etc/firmware/modem.b08 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b10:system/etc/firmware/modem.b10 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b11:system/etc/firmware/modem.b11 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b14:system/etc/firmware/modem.b14 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b15:system/etc/firmware/modem.b15 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b16:system/etc/firmware/modem.b16 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b17:system/etc/firmware/modem.b17 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b18:system/etc/firmware/modem.b18 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b19:system/etc/firmware/modem.b19 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b20:system/etc/firmware/modem.b20 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b23:system/etc/firmware/modem.b23 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b24:system/etc/firmware/modem.b24 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b25:system/etc/firmware/modem.b25 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b27:system/etc/firmware/modem.b27 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.b28:system/etc/firmware/modem.b28 \
-#	$(PROPRIETARY_PATH)/firmware/image/modem.mdt:system/etc/firmware/modem.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/playread.b00:system/etc/firmware/playread.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/playread.b01:system/etc/firmware/playread.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/playread.b02:system/etc/firmware/playread.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/playread.b03:system/etc/firmware/playread.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/playread.mdt:system/etc/firmware/playread.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/prov.b00:system/etc/firmware/prov.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/prov.b01:system/etc/firmware/prov.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/prov.b02:system/etc/firmware/prov.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/prov.b03:system/etc/firmware/prov.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/prov.mdt:system/etc/firmware/prov.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/reactive.b00:system/etc/firmware/reactive.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/reactive.b01:system/etc/firmware/reactive.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/reactive.b02:system/etc/firmware/reactive.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/reactive.b03:system/etc/firmware/reactive.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/reactive.mdt:system/etc/firmware/reactive.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/sec_stor.b00:system/etc/firmware/sec_stor.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/sec_stor.b01:system/etc/firmware/sec_stor.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/sec_stor.b02:system/etc/firmware/sec_stor.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/sec_stor.b03:system/etc/firmware/sec_stor.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/sec_stor.mdt:system/etc/firmware/sec_stor.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/skm.b00:system/etc/firmware/skm.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/skm.b01:system/etc/firmware/skm.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/skm.b02:system/etc/firmware/skm.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/skm.b03:system/etc/firmware/skm.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/skm.mdt:system/etc/firmware/skm.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/skmm_ta.b00:system/etc/firmware/skmm_ta.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/skmm_ta.b01:system/etc/firmware/skmm_ta.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/skmm_ta.b02:system/etc/firmware/skmm_ta.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/skmm_ta.b03:system/etc/firmware/skmm_ta.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/skmm_ta.mdt:system/etc/firmware/skmm_ta.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/sshdcpap.b00:system/etc/firmware/sshdcpap.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/sshdcpap.b01:system/etc/firmware/sshdcpap.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/sshdcpap.b02:system/etc/firmware/sshdcpap.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/sshdcpap.b03:system/etc/firmware/sshdcpap.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/sshdcpap.mdt:system/etc/firmware/sshdcpap.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/tbase.b00:system/etc/firmware/tbase.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/tbase.b01:system/etc/firmware/tbase.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/tbase.b02:system/etc/firmware/tbase.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/tbase.b03:system/etc/firmware/tbase.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/tbase.mdt:system/etc/firmware/tbase.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_atn.b00:system/etc/firmware/tima_atn.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_atn.b01:system/etc/firmware/tima_atn.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_atn.b02:system/etc/firmware/tima_atn.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_atn.b03:system/etc/firmware/tima_atn.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_atn.mdt:system/etc/firmware/tima_atn.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_key.b00:system/etc/firmware/tima_key.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_key.b01:system/etc/firmware/tima_key.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_key.b02:system/etc/firmware/tima_key.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_key.b03:system/etc/firmware/tima_key.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_key.mdt:system/etc/firmware/tima_key.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_lkm.b00:system/etc/firmware/tima_lkm.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_lkm.b01:system/etc/firmware/tima_lkm.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_lkm.b02:system/etc/firmware/tima_lkm.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_lkm.b03:system/etc/firmware/tima_lkm.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_lkm.mdt:system/etc/firmware/tima_lkm.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_pkm.b00:system/etc/firmware/tima_pkm.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_pkm.b01:system/etc/firmware/tima_pkm.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_pkm.b02:system/etc/firmware/tima_pkm.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_pkm.b03:system/etc/firmware/tima_pkm.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/tima_pkm.mdt:system/etc/firmware/tima_pkm.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/tz_ccm.b00:system/etc/firmware/tz_ccm.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/tz_ccm.b01:system/etc/firmware/tz_ccm.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/tz_ccm.b02:system/etc/firmware/tz_ccm.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/tz_ccm.b03:system/etc/firmware/tz_ccm.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/tz_ccm.mdt:system/etc/firmware/tz_ccm.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/tz_otp.b00:system/etc/firmware/tz_otp.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/tz_otp.b01:system/etc/firmware/tz_otp.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/tz_otp.b02:system/etc/firmware/tz_otp.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/tz_otp.b03:system/etc/firmware/tz_otp.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/tz_otp.mdt:system/etc/firmware/tz_otp.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/venus.b00:system/etc/firmware/venus.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/venus.b01:system/etc/firmware/venus.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/venus.b02:system/etc/firmware/venus.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/venus.b03:system/etc/firmware/venus.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/venus.b04:system/etc/firmware/venus.b04 \
-#	$(PROPRIETARY_PATH)/firmware/image/venus.mdt:system/etc/firmware/venus.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/wcnss.b00:system/etc/firmware/wcnss.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/wcnss.b01:system/etc/firmware/wcnss.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/wcnss.b02:system/etc/firmware/wcnss.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/wcnss.b04:system/etc/firmware/wcnss.b04 \
-#	$(PROPRIETARY_PATH)/firmware/image/wcnss.b06:system/etc/firmware/wcnss.b06 \
-#	$(PROPRIETARY_PATH)/firmware/image/wcnss.b09:system/etc/firmware/wcnss.b09 \
-#	$(PROPRIETARY_PATH)/firmware/image/wcnss.b10:system/etc/firmware/wcnss.b10 \
-#	$(PROPRIETARY_PATH)/firmware/image/wcnss.b11:system/etc/firmware/wcnss.b11 \
-#	$(PROPRIETARY_PATH)/firmware/image/wcnss.mdt:system/etc/firmware/wcnss.mdt \
-#	$(PROPRIETARY_PATH)/firmware/image/widevine.b00:system/etc/firmware/widevine.b00 \
-#	$(PROPRIETARY_PATH)/firmware/image/widevine.b01:system/etc/firmware/widevine.b01 \
-#	$(PROPRIETARY_PATH)/firmware/image/widevine.b02:system/etc/firmware/widevine.b02 \
-#	$(PROPRIETARY_PATH)/firmware/image/widevine.b03:system/etc/firmware/widevine.b03 \
-#	$(PROPRIETARY_PATH)/firmware/image/widevine.mdt:system/etc/firmware/widevine.mdt
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/apac/sbm/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/sbm/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/comb_att/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/comb_att/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/eps_only/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/eps_only/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/comb_att/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/comb_att/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/eps_only/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/eps_only/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/comb_att/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/comb_att/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/eps_only/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/eps_only/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/comb_att/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/comb_att/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/eps_only/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/eps_only/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/comb_att/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/comb_att/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/eps_only/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/dsda/eps_only/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/comb_att/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/comb_att/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/eps_only/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/sglte/ss/eps_only/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/3g/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/3g/ss/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsda/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsda/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsds/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_eps/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_eps/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_no_/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_no_/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/ss/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/dsda/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/dsda/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/svlte/ss/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/drds/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/drds/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsda/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsda/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsds/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsds/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/ss/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/ss/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/default/default/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/default/default/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/us_cellu/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/us_cellu/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/common/w_one/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/w_one/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/3g/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/3g/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/volte/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/volte/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/ecsfb/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/ecsfb/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/1xsrlte/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/1xsrlte/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn \
+#	$(PROPRIETARY_PATH)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/svlte/mcfg_sw.mbn:system/etc/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/svlte/mcfg_sw.mbn
 
-
-##################################
+#######################################################################
 
 #	$(PROPRIETARY_PATH)/lib/libarac.so:system/lib/libarac.so \
 #	$(PROPRIETARY_PATH)/lib/libarccamera.so:system/lib/libarccamera.so \
@@ -772,8 +624,6 @@ PRODUCT_COPY_FILES += \
 #	$(PROPRIETARY_PATH)/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
 #	$(PROPRIETARY_PATH)/lib/libMMFW_scone_stub.so:system/lib/libMMFW_scone_stub.so \
 #	$(PROPRIETARY_PATH)/lib/libMP4Converter.so:system/lib/libMP4Converter.so \
-#	$(PROPRIETARY_PATH)/lib/libmtp_samsung_jni.so:system/lib/libmtp_samsung_jni.so \
-#	$(PROPRIETARY_PATH)/lib/libmtp_samsung.so:system/lib/libmtp_samsung.so \
 #	$(PROPRIETARY_PATH)/lib/libnativemr.so:system/lib/libnativemr.so \
 #	$(PROPRIETARY_PATH)/lib/libnvaccessor_fb.so:system/lib/libnvaccessor_fb.so \
 #	$(PROPRIETARY_PATH)/lib/libomacp.so:system/lib/libomacp.so \
