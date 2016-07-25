@@ -196,10 +196,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/irsc_util:system/bin/irsc_util \
 	$(PROPRIETARY_PATH)/bin/loc_launcher:system/bin/loc_launcher \
-	$(PROPRIETARY_PATH)/lib/libgps.utils.so:system/lib/libgps.utils.so \
-	$(PROPRIETARY_PATH)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-	$(PROPRIETARY_PATH)/lib/libloc_core.so:system/lib/libloc_core.so \
-	$(PROPRIETARY_PATH)/lib/libloc_eng.so:system/lib/libloc_eng.so \
+#	$(PROPRIETARY_PATH)/lib/libgps.utils.so:system/lib/libgps.utils.so \
+#	$(PROPRIETARY_PATH)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+#	$(PROPRIETARY_PATH)/lib/libloc_core.so:system/lib/libloc_core.so \
+#	$(PROPRIETARY_PATH)/lib/libloc_eng.so:system/lib/libloc_eng.so \
 	$(PROPRIETARY_PATH)/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
 	$(PROPRIETARY_PATH)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
