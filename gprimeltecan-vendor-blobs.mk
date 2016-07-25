@@ -194,25 +194,41 @@ PRODUCT_COPY_FILES += \
 
 ## GPS
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/etc/Diag_gps.cfg:system/etc/Diag_gps.cfg \
 	$(PROPRIETARY_PATH)/bin/irsc_util:system/bin/irsc_util \
 	$(PROPRIETARY_PATH)/bin/loc_launcher:system/bin/loc_launcher \
-#	$(PROPRIETARY_PATH)/lib/libgps.utils.so:system/lib/libgps.utils.so \
-#	$(PROPRIETARY_PATH)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-#	$(PROPRIETARY_PATH)/lib/libloc_core.so:system/lib/libloc_core.so \
-#	$(PROPRIETARY_PATH)/lib/libloc_eng.so:system/lib/libloc_eng.so \
 	$(PROPRIETARY_PATH)/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
 	$(PROPRIETARY_PATH)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
 	$(PROPRIETARY_PATH)/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so
 	
+#	$(PROPRIETARY_PATH)/lib/libgps.utils.so:system/lib/libgps.utils.so \
+#	$(PROPRIETARY_PATH)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+#	$(PROPRIETARY_PATH)/lib/libloc_core.so:system/lib/libloc_core.so \
+#	$(PROPRIETARY_PATH)/lib/libloc_eng.so:system/lib/libloc_eng.so \
+
 ##NFC
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/libnfc-sec-hal.conf:system/etc/libnfc-sec-hal.conf \
 	$(PROPRIETARY_PATH)/etc/libnfc-sec.conf:system/etc/libnfc-sec.conf \
 	$(PROPRIETARY_PATH)/etc/security_nfc_profile.dat:system/etc/security_nfc_profile.dat \
-	$(PROPRIETARY_PATH)/etc/sec_s3fwrn5_rfreg.bin:system/etc/sec_s3fwrn5_rfreg.bin
+	$(PROPRIETARY_PATH)/etc/sec_s3fwrn5_rfreg.bin:system/etc/sec_s3fwrn5_rfreg.bin \
+	$(PROPRIETARY_PATH)/lib/hw/nfc_nci.msm8916.so:system/lib/hw/nfc_nci.msm8916.so \
+	$(PROPRIETARY_PATH)/lib/libnfc-nci.so:system/lib/libnfc-nci.so \
+	$(PROPRIETARY_PATH)/lib/libnfc_nci_jni.so:system/lib/libnfc_nci_jni.so
+	
+#	$(PROPRIETARY_PATH)/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
 
+#MTP
+PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/bin/mtpd:system/bin/mtpd \
+	$(PROPRIETARY_PATH)/priv-app/MtpApplication/MtpApplication.apk:system/priv-app/MtpApplication/MtpApplication.apk \
+	$(PROPRIETARY_PATH)/priv-app/MtpApplication/arm/MtpApplication.odex:system/priv-app/MtpApplication/arm/MtpApplication.odex \
+	$(PROPRIETARY_PATH)/lib/libmtp_samsung_jni.so:system/lib/libmtp_samsung_jni.so \
+	$(PROPRIETARY_PATH)/lib/libmtp_samsung.so:system/lib/libmtp_samsung.so \
+	$(PROPRIETARY_PATH)/lib/libmtp.so:system/lib/libmtp.so
+	
 ## Graphics
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
@@ -320,7 +336,17 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libsecureuisvc_jni.so:system/vendor/lib/libsecureuisvc_jni.so
 
 #Misc (Qualcomm?)
+#	$(PROPRIETARY_PATH)/bin/cs:system/bin/cs \ <-- KNOX
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/bin/lpm:system/bin/lpm \
+	$(PROPRIETARY_PATH)/bin/edmaudit:system/bin/edmaudit \
+	$(PROPRIETARY_PATH)/bin/icd:system/bin/icd \
+	$(PROPRIETARY_PATH)/bin/insthk:system/bin/insthk \
+	$(PROPRIETARY_PATH)/bin/mcStarter:system/bin/mcStarter \
+	$(PROPRIETARY_PATH)/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
+	$(PROPRIETARY_PATH)/bin/ss_conn_daemon:system/bin/ss_conn_daemon \
+	$(PROPRIETARY_PATH)/bin/tlc_server:system/bin/tlc_server \
+	$(PROPRIETARY_PATH)/bin/otp_server:system/bin/otp_server \
 	$(PROPRIETARY_PATH)/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
 	$(PROPRIETARY_PATH)/vendor/bin/sound_trigger_test:system/vendor/bin/sound_trigger_test \
 	$(PROPRIETARY_PATH)/vendor/firmware/sec_s3fwrn5_firmware.bin:system/vendor/firmware/sec_s3fwrn5_firmware.bin \
@@ -370,28 +396,29 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/epdg_apns_conf.xml:system/etc/epdg_apns_conf.xml \
 	$(PROPRIETARY_PATH)/etc/plmn_delta.bin:system/etc/plmn_delta.bin \
 	$(PROPRIETARY_PATH)/etc/srm.bin:system/etc/srm.bin \
-	$(PROPRIETARY_PATH)/lib/libmtp_samsung_jni.so:system/lib/libmtp_samsung_jni.so \
-	$(PROPRIETARY_PATH)/lib/libmtp_samsung.so:system/lib/libmtp_samsung.so
+	$(PROPRIETARY_PATH)/usr/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc \
+	$(PROPRIETARY_PATH)/usr/idc/Synaptics_RMI4_TouchPad_Sensor.idc:system/usr/idc/Synaptics_RMI4_TouchPad_Sensor.idc
 	
 # RIL
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-	$(PROPRIETARY_PATH)/bin/rild:system/bin/rild \
 	$(PROPRIETARY_PATH)/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
-	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/lib/libreference-ril.so \
-	$(PROPRIETARY_PATH)/lib/libril.so:system/lib/libril.so \
-	$(PROPRIETARY_PATH)/lib/librilutils.so:system/lib/librilutils.so \
 	$(PROPRIETARY_PATH)/lib/libsec-ril.so:system/lib/libsec-ril.so \
-	$(PROPRIETARY_PATH)/lib/libsecril-client.so:system/lib/libsecril-client.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
+	$(PROPRIETARY_PATH)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/rilswitch/sec/lib/libreference-ril.so \
+	$(PROPRIETARY_PATH)/bin/rild:system/rilswitch/sec/bin/rild \
+	$(PROPRIETARY_PATH)/lib/libril.so:system/rilswitch/sec/lib/libril.so \
+	$(PROPRIETARY_PATH)/lib/libsecril-client.so:system/rilswitch/sec/lib/libsecril-client.so \
+	$(PROPRIETARY_PATH)/lib/librilutils.so:system/rilswitch/sec/lib/librilutils.so
 
 # Radio
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/bin/olsrd:system/bin/olsrd \
+	$(PROPRIETARY_PATH)/bin/IPSecService:system/bin/IPSecService \
 	$(PROPRIETARY_PATH)/bin/ddexe:system/bin/ddexe \
 	$(PROPRIETARY_PATH)/bin/smdexe:system/bin/smdexe \
 	$(PROPRIETARY_PATH)/bin/connfwexe:system/bin/connfwexe \
 	$(PROPRIETARY_PATH)/bin/diag_mdlog:system/bin/diag_mdlog \
-	$(PROPRIETARY_PATH)/bin/bintvoutservice:system/bin/bintvoutservice \
 	$(PROPRIETARY_PATH)/bin/at_distributor:system/bin/at_distributor \
 	$(PROPRIETARY_PATH)/bin/diag_uart_log:system/bin/diag_uart_log \
 	$(PROPRIETARY_PATH)/bin/netmgrd:system/bin/netmgrd \
