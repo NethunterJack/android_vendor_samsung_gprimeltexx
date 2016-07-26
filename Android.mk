@@ -24,6 +24,16 @@ include $(BUILD_PREBUILT)
 
 ######################
 
+### libloc_eng
+include $(CLEAR_VARS)
+LOCAL_MODULE       := libloc_eng
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_OWNER := qcom
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_SRC_FILES    := proprietary/lib/libloc_eng.so
+include $(BUILD_PREBUILT)
+
 #######################
 #### libril
 #include $(CLEAR_VARS)
