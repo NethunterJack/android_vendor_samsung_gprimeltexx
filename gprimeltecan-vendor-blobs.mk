@@ -202,7 +202,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
 	$(PROPRIETARY_PATH)/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
-	$(PROPRIETARY_PATH)/lib/libloc_core.so:system/lib/libloc_core.so
+	$(PROPRIETARY_PATH)/lib/libloc_core.so:system/lib/libloc_core.so \
 	$(PROPRIETARY_PATH)/lib/libgps.utils.so:system/lib/libgps.utils.so \
 	$(PROPRIETARY_PATH)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
 	$(PROPRIETARY_PATH)/lib/libloc_eng.so:system/lib/libloc_eng.so
@@ -404,11 +404,15 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
 	$(PROPRIETARY_PATH)/lib/libsec-ril.so:system/lib/libsec-ril.so \
  	$(PROPRIETARY_PATH)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
-	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/lib/libreference-ril.so \
-	$(PROPRIETARY_PATH)/bin/rild:system/bin/rild \
-	$(PROPRIETARY_PATH)/lib/libril.so:system/lib/libril.so \
 	$(PROPRIETARY_PATH)/lib/libsecril-client.so:system/lib/libsecril-client.so \
-	$(PROPRIETARY_PATH)/lib/librilutils.so:system/lib/librilutils.so
+	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/rilswitch/sec/lib/libreference-ril.so \
+	$(PROPRIETARY_PATH)/bin/rild:system/rilswitch/sec/bin/rild \
+	$(PROPRIETARY_PATH)/lib/libril.so:system/rilswitch/sec/lib/libril.so \
+	$(PROPRIETARY_PATH)/lib/librilutils.so:system/rilswitch/sec/lib/librilutils.so
+#	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/lib/libreference-ril.so \
+#	$(PROPRIETARY_PATH)/bin/rild:system/bin/rild \
+#	$(PROPRIETARY_PATH)/lib/libril.so:system/lib/libril.so \
+#	$(PROPRIETARY_PATH)/lib/librilutils.so:system/lib/librilutils.so
 
 # Radio
 PRODUCT_COPY_FILES += \
