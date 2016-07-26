@@ -335,9 +335,9 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libsecureui_svcsock.so:system/vendor/lib/libsecureui_svcsock.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libsecureuisvc_jni.so:system/vendor/lib/libsecureuisvc_jni.so
 
+# 	$(PROPRIETARY_PATH)/bin/lpm:system/bin/lpm \
 #Misc (Qualcomm?)
 PRODUCT_COPY_FILES += \
- 	$(PROPRIETARY_PATH)/bin/lpm:system/bin/lpm \
 	$(PROPRIETARY_PATH)/bin/edmaudit:system/bin/edmaudit \
 	$(PROPRIETARY_PATH)/bin/icd:system/bin/icd \
 	$(PROPRIETARY_PATH)/bin/insthk:system/bin/insthk \
@@ -399,14 +399,14 @@ PRODUCT_COPY_FILES += \
 # RIL
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-	$(PROPRIETARY_PATH)/bin/rild:system/bin/rild \
 	$(PROPRIETARY_PATH)/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
-	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/lib/libreference-ril.so \
-	$(PROPRIETARY_PATH)/lib/libril.so:system/lib/libril.so \
-	$(PROPRIETARY_PATH)/lib/librilutils.so:system/lib/librilutils.so \
 	$(PROPRIETARY_PATH)/lib/libsec-ril.so:system/lib/libsec-ril.so \
+ 	$(PROPRIETARY_PATH)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/lib/libreference-ril.so \
+	$(PROPRIETARY_PATH)/bin/rild:system/bin/rild \
+	$(PROPRIETARY_PATH)/lib/libril.so:system/lib/libril.so \
 	$(PROPRIETARY_PATH)/lib/libsecril-client.so:system/lib/libsecril-client.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
+	$(PROPRIETARY_PATH)/lib/librilutils.so:system/lib/librilutils.so
 
 # Radio
 PRODUCT_COPY_FILES += \
