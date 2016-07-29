@@ -7,19 +7,19 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so
 
 #IMS SERVICE
-PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
-	$(PROPRIETARY_PATH)/bin/imscmservice:system/bin/imscmservice \
-	$(PROPRIETARY_PATH)/bin/imsdatadaemon:system/bin/imsdatadaemon \
-	$(PROPRIETARY_PATH)/bin/imsqmidaemon:system/bin/imsqmidaemon \
-	$(PROPRIETARY_PATH)/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
-	$(PROPRIETARY_PATH)/etc/permissions/imsmanager_library.xml:system/etc/permissions/imsmanager_library.xml \
-	$(PROPRIETARY_PATH)/framework/arm/imsmanager-internal.odex:system/framework/arm/imsmanager-internal.odex \
-	$(PROPRIETARY_PATH)/framework/imsmanager-internal.jar:system/framework/imsmanager-internal.jar \
-	$(PROPRIETARY_PATH)/framework/imsmanager.jar:system/framework/imsmanager.jar \
-	$(PROPRIETARY_PATH)/priv-app/imsservice:system/priv-app/imsservice \
-	$(PROPRIETARY_PATH)/priv-app/imsservice/arm/imsservice.odex:system/priv-app/imsservice/arm/imsservice.odex \
-	$(PROPRIETARY_PATH)/priv-app/imsservice/imsservice.apk:system/priv-app/imsservice/imsservice.apk
+#PRODUCT_COPY_FILES += \
+#	$(PROPRIETARY_PATH)/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
+#	$(PROPRIETARY_PATH)/bin/imscmservice:system/bin/imscmservice \
+#	$(PROPRIETARY_PATH)/bin/imsdatadaemon:system/bin/imsdatadaemon \
+#	$(PROPRIETARY_PATH)/bin/imsqmidaemon:system/bin/imsqmidaemon \
+#	$(PROPRIETARY_PATH)/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
+#	$(PROPRIETARY_PATH)/etc/permissions/imsmanager_library.xml:system/etc/permissions/imsmanager_library.xml \
+#	$(PROPRIETARY_PATH)/framework/arm/imsmanager-internal.odex:system/framework/arm/imsmanager-internal.odex \
+#	$(PROPRIETARY_PATH)/framework/imsmanager-internal.jar:system/framework/imsmanager-internal.jar \
+#	$(PROPRIETARY_PATH)/framework/imsmanager.jar:system/framework/imsmanager.jar \
+#	$(PROPRIETARY_PATH)/priv-app/imsservice:system/priv-app/imsservice \
+#	$(PROPRIETARY_PATH)/priv-app/imsservice/arm/imsservice.odex:system/priv-app/imsservice/arm/imsservice.odex \
+#	$(PROPRIETARY_PATH)/priv-app/imsservice/imsservice.apk:system/priv-app/imsservice/imsservice.apk
 
 #Misc (media) 	
 PRODUCT_COPY_FILES += \
@@ -338,9 +338,14 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libsecureuisvc_jni.so:system/vendor/lib/libsecureuisvc_jni.so
 
 # 	$(PROPRIETARY_PATH)/bin/lpm:system/bin/lpm \
+#	$(PROPRIETARY_PATH)/bin/edmaudit:system/bin/edmaudit \
 #Misc (Qualcomm?)
 PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/bin/edmaudit:system/bin/edmaudit \
+	$(PROPRIETARY_PATH)/etc/mcc_otalookup.xml:system/etc/mcc_otalookup.xml \
+	$(PROPRIETARY_PATH)/etc/epdg_apns_conf.xml:system/etc/epdg_apns_conf.xml \
+	$(PROPRIETARY_PATH)/etc/plmn_delta.bin:system/etc/plmn_delta.bin \
+	$(PROPRIETARY_PATH)/etc/srm.bin:system/etc/srm.bin \
+	$(PROPRIETARY_PATH)/etc/spn-conf.xml:system/etc/spn-conf.xml \
 	$(PROPRIETARY_PATH)/bin/icd:system/bin/icd \
 	$(PROPRIETARY_PATH)/bin/insthk:system/bin/insthk \
 	$(PROPRIETARY_PATH)/bin/mcStarter:system/bin/mcStarter \
@@ -392,11 +397,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
-	$(PROPRIETARY_PATH)/etc/mcc_otalookup.xml:system/etc/mcc_otalookup.xml \
-	$(PROPRIETARY_PATH)/etc/epdg_apns_conf.xml:system/etc/epdg_apns_conf.xml \
-	$(PROPRIETARY_PATH)/etc/plmn_delta.bin:system/etc/plmn_delta.bin \
-	$(PROPRIETARY_PATH)/etc/srm.bin:system/etc/srm.bin
+	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so
 	
 # RIL
 PRODUCT_COPY_FILES += \
@@ -408,16 +409,15 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/rilswitch/sec/lib/libreference-ril.so \
 	$(PROPRIETARY_PATH)/bin/rild:system/rilswitch/sec/bin/rild \
 	$(PROPRIETARY_PATH)/lib/libril.so:system/rilswitch/sec/lib/libril.so \
-	$(PROPRIETARY_PATH)/lib/librilutils.so:system/rilswitch/sec/lib/librilutils.so
-#	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/lib/libreference-ril.so \
-#	$(PROPRIETARY_PATH)/bin/rild:system/bin/rild \
-#	$(PROPRIETARY_PATH)/lib/libril.so:system/lib/libril.so \
-#	$(PROPRIETARY_PATH)/lib/librilutils.so:system/lib/librilutils.so
+	$(PROPRIETARY_PATH)/lib/librilutils.so:system/rilswitch/sec/lib/librilutils.so \
+	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/lib/libreference-ril.so \
+	$(PROPRIETARY_PATH)/bin/rild:system/bin/rild \
+	$(PROPRIETARY_PATH)/lib/libril.so:system/lib/libril.so \
+	$(PROPRIETARY_PATH)/lib/librilutils.so:system/lib/librilutils.so
 
 # Radio
 PRODUCT_COPY_FILES += \
  	$(PROPRIETARY_PATH)/bin/olsrd:system/bin/olsrd \
-	$(PROPRIETARY_PATH)/bin/IPSecService:system/bin/IPSecService \
 	$(PROPRIETARY_PATH)/bin/ddexe:system/bin/ddexe \
 	$(PROPRIETARY_PATH)/bin/smdexe:system/bin/smdexe \
 	$(PROPRIETARY_PATH)/bin/connfwexe:system/bin/connfwexe \
@@ -442,7 +442,8 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libxml.so:system/vendor/lib/libxml.so
-	
+#	$(PROPRIETARY_PATH)/bin/IPSecService:system/bin/IPSecService \
+
 # Thermal
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/thermal-engine:system/bin/thermal-engine \
@@ -533,12 +534,12 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/fmconfig:system/bin/fmconfig
 
 #Modem Firmware
-PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/firmware/image/keymaste.b00:system/vendor/firmware/keymaster/keymaster.b00 \
-	$(PROPRIETARY_PATH)/firmware/image/keymaste.b01:system/vendor/firmware/keymaster/keymaster.b01 \
-	$(PROPRIETARY_PATH)/firmware/image/keymaste.b02:system/vendor/firmware/keymaster/keymaster.b02 \
-	$(PROPRIETARY_PATH)/firmware/image/keymaste.b03:system/vendor/firmware/keymaster/keymaster.b03 \
-	$(PROPRIETARY_PATH)/firmware/image/keymaste.mdt:system/vendor/firmware/keymaster/keymaster.mdt
+#PRODUCT_COPY_FILES += \
+#	$(PROPRIETARY_PATH)/firmware/image/keymaste.b00:system/vendor/firmware/keymaster/keymaster.b00 \
+#	$(PROPRIETARY_PATH)/firmware/image/keymaste.b01:system/vendor/firmware/keymaster/keymaster.b01 \
+#	$(PROPRIETARY_PATH)/firmware/image/keymaste.b02:system/vendor/firmware/keymaster/keymaster.b02 \
+#	$(PROPRIETARY_PATH)/firmware/image/keymaste.b03:system/vendor/firmware/keymaster/keymaster.b03 \
+#	$(PROPRIETARY_PATH)/firmware/image/keymaste.mdt:system/vendor/firmware/keymaster/keymaster.mdt
 	
 ###############################################################################
 
