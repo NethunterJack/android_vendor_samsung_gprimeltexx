@@ -231,10 +231,6 @@ PRODUCT_COPY_FILES += \
 	
 # Hardware
 #	$(PROPRIETARY_PATH)/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so \
-PRODUCT_COPY_FILES += \
- 	$(PROPRIETARY_PATH)/usr/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc \
-	$(PROPRIETARY_PATH)/usr/idc/Synaptics_RMI4_TouchPad_Sensor.idc:system/usr/idc/Synaptics_RMI4_TouchPad_Sensor.idc
-
 
 ## Graphics
 PRODUCT_COPY_FILES += \
