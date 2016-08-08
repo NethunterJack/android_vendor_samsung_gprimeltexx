@@ -11,15 +11,7 @@ PRODUCT_COPY_FILES += \
 #	$(PROPRIETARY_PATH)/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
 #	$(PROPRIETARY_PATH)/bin/imscmservice:system/bin/imscmservice \
 #	$(PROPRIETARY_PATH)/bin/imsdatadaemon:system/bin/imsdatadaemon \
-#	$(PROPRIETARY_PATH)/bin/imsqmidaemon:system/bin/imsqmidaemon \
-#	$(PROPRIETARY_PATH)/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
-#	$(PROPRIETARY_PATH)/etc/permissions/imsmanager_library.xml:system/etc/permissions/imsmanager_library.xml \
-#	$(PROPRIETARY_PATH)/framework/arm/imsmanager-internal.odex:system/framework/arm/imsmanager-internal.odex \
-#	$(PROPRIETARY_PATH)/framework/imsmanager-internal.jar:system/framework/imsmanager-internal.jar \
-#	$(PROPRIETARY_PATH)/framework/imsmanager.jar:system/framework/imsmanager.jar \
-#	$(PROPRIETARY_PATH)/priv-app/imsservice:system/priv-app/imsservice \
-#	$(PROPRIETARY_PATH)/priv-app/imsservice/arm/imsservice.odex:system/priv-app/imsservice/arm/imsservice.odex \
-#	$(PROPRIETARY_PATH)/priv-app/imsservice/imsservice.apk:system/priv-app/imsservice/imsservice.apk
+#	$(PROPRIETARY_PATH)/bin/imsqmidaemon:system/bin/imsqmidaemon
 
 #Misc (media) 	
 PRODUCT_COPY_FILES += \
@@ -263,23 +255,23 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libscale.so:system/vendor/lib/libscale.so
 	
-#Kernel Modules
-PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/lib/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
-	$(PROPRIETARY_PATH)/lib/modules/core_ctl.ko:system/lib/modules/core_ctl.ko \
-	$(PROPRIETARY_PATH)/lib/modules/dma_test.ko:system/lib/modules/dma_test.ko \
-	$(PROPRIETARY_PATH)/lib/modules/evbug.ko:system/lib/modules/evbug.ko \
-	$(PROPRIETARY_PATH)/lib/modules/gator.ko:system/lib/modules/gator.ko \
-	$(PROPRIETARY_PATH)/lib/modules/mmc_block_test.ko:system/lib/modules/mmc_block_test.ko \
-	$(PROPRIETARY_PATH)/lib/modules/mmc_test.ko:system/lib/modules/mmc_test.ko \
-	$(PROPRIETARY_PATH)/lib/modules/msm-buspm-dev.ko:system/lib/modules/msm-buspm-dev.ko \
-	$(PROPRIETARY_PATH)/lib/modules/oprofile.ko:system/lib/modules/oprofile.ko \
-	$(PROPRIETARY_PATH)/lib/modules/pronto/pronto_wlan.ko:system/lib/modules/pronto/pronto_wlan.ko \
-	$(PROPRIETARY_PATH)/lib/modules/radio-iris-transport.ko:system/lib/modules/radio-iris-transport.ko \
-	$(PROPRIETARY_PATH)/lib/modules/spidev.ko:system/lib/modules/spidev.ko \
-	$(PROPRIETARY_PATH)/lib/modules/tcp_htcp.ko:system/lib/modules/tcp_htcp.ko \
-	$(PROPRIETARY_PATH)/lib/modules/tcp_westwood.ko:system/lib/modules/tcp_westwood.ko \
-	$(PROPRIETARY_PATH)/lib/modules/test-iosched.ko:system/lib/modules/test-iosched.ko
+##Kernel Modules
+#PRODUCT_COPY_FILES += \
+#	$(PROPRIETARY_PATH)/lib/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/core_ctl.ko:system/lib/modules/core_ctl.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/dma_test.ko:system/lib/modules/dma_test.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/evbug.ko:system/lib/modules/evbug.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/gator.ko:system/lib/modules/gator.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/mmc_block_test.ko:system/lib/modules/mmc_block_test.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/mmc_test.ko:system/lib/modules/mmc_test.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/msm-buspm-dev.ko:system/lib/modules/msm-buspm-dev.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/oprofile.ko:system/lib/modules/oprofile.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/pronto/pronto_wlan.ko:system/lib/modules/pronto/pronto_wlan.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/radio-iris-transport.ko:system/lib/modules/radio-iris-transport.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/spidev.ko:system/lib/modules/spidev.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/tcp_htcp.ko:system/lib/modules/tcp_htcp.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/tcp_westwood.ko:system/lib/modules/tcp_westwood.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/test-iosched.ko:system/lib/modules/test-iosched.ko
 	
 #	$(PROPRIETARY_PATH)/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
 # Media
@@ -335,6 +327,9 @@ PRODUCT_COPY_FILES += \
 
 # 	$(PROPRIETARY_PATH)/bin/lpm:system/bin/lpm \
 #	$(PROPRIETARY_PATH)/bin/edmaudit:system/bin/edmaudit \
+#	$(PROPRIETARY_PATH)/bin/mcStarter:system/bin/mcStarter \
+#	$(PROPRIETARY_PATH)/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
+#	$(PROPRIETARY_PATH)/bin/ss_conn_daemon:system/bin/ss_conn_daemon \
 #Misc (Qualcomm?)
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/mcc_otalookup.xml:system/etc/mcc_otalookup.xml \
@@ -344,9 +339,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/spn-conf.xml:system/etc/spn-conf.xml \
 	$(PROPRIETARY_PATH)/bin/icd:system/bin/icd \
 	$(PROPRIETARY_PATH)/bin/insthk:system/bin/insthk \
-	$(PROPRIETARY_PATH)/bin/mcStarter:system/bin/mcStarter \
-	$(PROPRIETARY_PATH)/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
-	$(PROPRIETARY_PATH)/bin/ss_conn_daemon:system/bin/ss_conn_daemon \
 	$(PROPRIETARY_PATH)/bin/tlc_server:system/bin/tlc_server \
 	$(PROPRIETARY_PATH)/bin/otp_server:system/bin/otp_server \
 	$(PROPRIETARY_PATH)/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
@@ -413,6 +405,7 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/bin/bridgemgrd:system/bin/bridgemgrd \
  	$(PROPRIETARY_PATH)/bin/olsrd:system/bin/olsrd \
 	$(PROPRIETARY_PATH)/bin/ddexe:system/bin/ddexe \
 	$(PROPRIETARY_PATH)/bin/smdexe:system/bin/smdexe \
@@ -464,6 +457,27 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
 	$(PROPRIETARY_PATH)/etc/firmware/Signedrompatch_v20.bin:system/etc/firmware/Signedrompatch_v20.bin
 
+
+## Audio - 1
+PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/bin/audiod:system/bin/audiod \
+	$(PROPRIETARY_PATH)/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
+	$(PROPRIETARY_PATH)/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
+	$(PROPRIETARY_PATH)/lib/hw/audio.primary.msm8916.so:system/lib/hw/audio.primary.msm8916.so \
+	$(PROPRIETARY_PATH)/lib/hw/audio.r_submix.default.so:system/lib/hw/audio.r_submix.default.so \
+	$(PROPRIETARY_PATH)/lib/hw/audio.usb.default.so:system/lib/hw/audio.usb.default.so \
+	$(PROPRIETARY_PATH)/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
+	$(PROPRIETARY_PATH)/lib/libaudio-resampler.so:system/lib/libaudio-resampler.so \
+	$(PROPRIETARY_PATH)/lib/libaudioeffect_jni.so:system/lib/libaudioeffect_jni.so \
+	$(PROPRIETARY_PATH)/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
+	$(PROPRIETARY_PATH)/lib/libaudioparameter.so:system/lib/libaudioparameter.so \
+	$(PROPRIETARY_PATH)/lib/libaudiopolicymanager.so:system/lib/libaudiopolicymanager.so \
+	$(PROPRIETARY_PATH)/lib/libaudiopolicymanagerdefault.so:system/lib/libaudiopolicymanagerdefault.so \
+	$(PROPRIETARY_PATH)/lib/libaudiopolicyservice.so:system/lib/libaudiopolicyservice.so \
+	$(PROPRIETARY_PATH)/lib/libaudioresampler.so:system/lib/libaudioresampler.so \
+	$(PROPRIETARY_PATH)/lib/libaudioutils.so:system/lib/libaudioutils.so \
+	$(PROPRIETARY_PATH)/lib/libwebrtc_audio_preprocessing.so:system/lib/libwebrtc_audio_preprocessing.so
+	
 #	$(PROPRIETARY_PATH)/lib/soundfx/libqcomvisualizer.so:system/lib/soundfx/libqcomvisualizer.so \
 #	$(PROPRIETARY_PATH)/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
 #	$(PROPRIETARY_PATH)/lib/soundfx/libqcompostprocbundle.so:system/lib/soundfx/libqcompostprocbundle.so \		
