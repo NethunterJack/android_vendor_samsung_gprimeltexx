@@ -256,22 +256,22 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libscale.so:system/vendor/lib/libscale.so
 	
 ##Kernel Modules
-PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/lib/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
-	$(PROPRIETARY_PATH)/lib/modules/core_ctl.ko:system/lib/modules/core_ctl.ko \
-	$(PROPRIETARY_PATH)/lib/modules/dma_test.ko:system/lib/modules/dma_test.ko \
-	$(PROPRIETARY_PATH)/lib/modules/evbug.ko:system/lib/modules/evbug.ko \
-	$(PROPRIETARY_PATH)/lib/modules/gator.ko:system/lib/modules/gator.ko \
-	$(PROPRIETARY_PATH)/lib/modules/mmc_block_test.ko:system/lib/modules/mmc_block_test.ko \
-	$(PROPRIETARY_PATH)/lib/modules/mmc_test.ko:system/lib/modules/mmc_test.ko \
-	$(PROPRIETARY_PATH)/lib/modules/msm-buspm-dev.ko:system/lib/modules/msm-buspm-dev.ko \
-	$(PROPRIETARY_PATH)/lib/modules/oprofile.ko:system/lib/modules/oprofile.ko \
-	$(PROPRIETARY_PATH)/lib/modules/pronto/pronto_wlan.ko:system/lib/modules/pronto/pronto_wlan.ko \
-	$(PROPRIETARY_PATH)/lib/modules/radio-iris-transport.ko:system/lib/modules/radio-iris-transport.ko \
-	$(PROPRIETARY_PATH)/lib/modules/spidev.ko:system/lib/modules/spidev.ko \
-	$(PROPRIETARY_PATH)/lib/modules/tcp_htcp.ko:system/lib/modules/tcp_htcp.ko \
-	$(PROPRIETARY_PATH)/lib/modules/tcp_westwood.ko:system/lib/modules/tcp_westwood.ko \
-	$(PROPRIETARY_PATH)/lib/modules/test-iosched.ko:system/lib/modules/test-iosched.ko
+#PRODUCT_COPY_FILES += \
+#	$(PROPRIETARY_PATH)/lib/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/core_ctl.ko:system/lib/modules/core_ctl.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/dma_test.ko:system/lib/modules/dma_test.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/evbug.ko:system/lib/modules/evbug.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/gator.ko:system/lib/modules/gator.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/mmc_block_test.ko:system/lib/modules/mmc_block_test.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/mmc_test.ko:system/lib/modules/mmc_test.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/msm-buspm-dev.ko:system/lib/modules/msm-buspm-dev.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/oprofile.ko:system/lib/modules/oprofile.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/pronto/pronto_wlan.ko:system/lib/modules/pronto/pronto_wlan.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/radio-iris-transport.ko:system/lib/modules/radio-iris-transport.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/spidev.ko:system/lib/modules/spidev.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/tcp_htcp.ko:system/lib/modules/tcp_htcp.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/tcp_westwood.ko:system/lib/modules/tcp_westwood.ko \
+#	$(PROPRIETARY_PATH)/lib/modules/test-iosched.ko:system/lib/modules/test-iosched.ko
 	
 #	$(PROPRIETARY_PATH)/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
 # Media
