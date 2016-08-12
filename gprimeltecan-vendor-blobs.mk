@@ -459,24 +459,24 @@ PRODUCT_COPY_FILES += \
 
 
 ## Audio - 1
-PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/bin/audiod:system/bin/audiod \
-	$(PROPRIETARY_PATH)/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
-	$(PROPRIETARY_PATH)/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
-	$(PROPRIETARY_PATH)/lib/hw/audio.primary.msm8916.so:system/lib/hw/audio.primary.msm8916.so \
-	$(PROPRIETARY_PATH)/lib/hw/audio.r_submix.default.so:system/lib/hw/audio.r_submix.default.so \
-	$(PROPRIETARY_PATH)/lib/hw/audio.usb.default.so:system/lib/hw/audio.usb.default.so \
-	$(PROPRIETARY_PATH)/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
-	$(PROPRIETARY_PATH)/lib/libaudio-resampler.so:system/lib/libaudio-resampler.so \
-	$(PROPRIETARY_PATH)/lib/libaudioeffect_jni.so:system/lib/libaudioeffect_jni.so \
-	$(PROPRIETARY_PATH)/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
-	$(PROPRIETARY_PATH)/lib/libaudioparameter.so:system/lib/libaudioparameter.so \
-	$(PROPRIETARY_PATH)/lib/libaudiopolicymanager.so:system/lib/libaudiopolicymanager.so \
-	$(PROPRIETARY_PATH)/lib/libaudiopolicymanagerdefault.so:system/lib/libaudiopolicymanagerdefault.so \
-	$(PROPRIETARY_PATH)/lib/libaudiopolicyservice.so:system/lib/libaudiopolicyservice.so \
-	$(PROPRIETARY_PATH)/lib/libaudioresampler.so:system/lib/libaudioresampler.so \
-	$(PROPRIETARY_PATH)/lib/libaudioutils.so:system/lib/libaudioutils.so \
-	$(PROPRIETARY_PATH)/lib/libwebrtc_audio_preprocessing.so:system/lib/libwebrtc_audio_preprocessing.so
+#PRODUCT_COPY_FILES += \
+#	$(PROPRIETARY_PATH)/bin/audiod:system/bin/audiod \
+#	$(PROPRIETARY_PATH)/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
+#	$(PROPRIETARY_PATH)/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
+#	$(PROPRIETARY_PATH)/lib/hw/audio.primary.msm8916.so:system/lib/hw/audio.primary.msm8916.so \
+#	$(PROPRIETARY_PATH)/lib/hw/audio.r_submix.default.so:system/lib/hw/audio.r_submix.default.so \
+#	$(PROPRIETARY_PATH)/lib/hw/audio.usb.default.so:system/lib/hw/audio.usb.default.so \
+#	$(PROPRIETARY_PATH)/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
+#	$(PROPRIETARY_PATH)/lib/libaudio-resampler.so:system/lib/libaudio-resampler.so \
+#	$(PROPRIETARY_PATH)/lib/libaudioeffect_jni.so:system/lib/libaudioeffect_jni.so \
+#	$(PROPRIETARY_PATH)/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
+#	$(PROPRIETARY_PATH)/lib/libaudioparameter.so:system/lib/libaudioparameter.so \
+#	$(PROPRIETARY_PATH)/lib/libaudiopolicymanager.so:system/lib/libaudiopolicymanager.so \
+#	$(PROPRIETARY_PATH)/lib/libaudiopolicymanagerdefault.so:system/lib/libaudiopolicymanagerdefault.so \
+#	$(PROPRIETARY_PATH)/lib/libaudiopolicyservice.so:system/lib/libaudiopolicyservice.so \
+#	$(PROPRIETARY_PATH)/lib/libaudioresampler.so:system/lib/libaudioresampler.so \
+#	$(PROPRIETARY_PATH)/lib/libaudioutils.so:system/lib/libaudioutils.so \
+#	$(PROPRIETARY_PATH)/lib/libwebrtc_audio_preprocessing.so:system/lib/libwebrtc_audio_preprocessing.so
 	
 #	$(PROPRIETARY_PATH)/lib/soundfx/libqcomvisualizer.so:system/lib/soundfx/libqcomvisualizer.so \
 #	$(PROPRIETARY_PATH)/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
