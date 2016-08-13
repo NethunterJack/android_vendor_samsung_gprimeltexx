@@ -33,7 +33,35 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
 	$(PROPRIETARY_PATH)/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+	$(PROPRIETARY_PATH)/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
+	$(PROPRIETARY_PATH)/cameradata/ThemeShot/MaskInfo_v2_download.conf:system/cameradata/ThemeShot/MaskInfo_v2_download.conf \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libcartoon.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libcartoon.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libfadedcolours.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libfadedcolours.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libfisheye.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libfisheye.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libgreyscale.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libgreyscale.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libmoody.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libmoody.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.liboilpastel.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.liboilpastel.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.librugged.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.librugged.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libsepia.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libsepia.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libtint.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libtint.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libturquoise.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libturquoise.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libvignette.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libvignette.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libvintage.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libvintage.so \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libcartoon.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libcartoon.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libfadedcolours.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libfadedcolours.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libfisheye.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libfisheye.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libgreyscale.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libgreyscale.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libmoody.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libmoody.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.liboilpastel.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.liboilpastel.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.librugged.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.librugged.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libsepia.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libsepia.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libtint.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libtint.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libturquoise.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libturquoise.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libvignette.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libvignette.png \
+	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libvintage.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libvintage.png \
 	$(PROPRIETARY_PATH)/cameradata/preloadfilters/internal_filter.xml:system/cameradata/preloadfilters/internal_filter.xml \
+	$(PROPRIETARY_PATH)/cameradata/secvision/golfShot/golf_shot_icon.png:system/cameradata/secvision/golfShot/golf_shot_icon.png \
+	$(PROPRIETARY_PATH)/cameradata/secvision/soundshot/sound_shot_icon.png:system/cameradata/secvision/soundshot/sound_shot_icon.png \
 	$(PROPRIETARY_PATH)/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
 	$(PROPRIETARY_PATH)/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
 	$(PROPRIETARY_PATH)/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
@@ -57,15 +85,17 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libqomx_core.so:system/lib/libqomx_core.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libactuator_dw9804_kleos_camcorder.so:system/vendor/lib/libactuator_dw9804_kleos_camcorder.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libactuator_dw9804_kleos_camera.so:system/vendor/lib/libactuator_dw9804_kleos_camera.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_common.so:system/vendor/lib/libchromatix_imx219_common.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_common_res0.so:system/vendor/lib/libchromatix_imx219_common_res0.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_common_res1.so:system/vendor/lib/libchromatix_imx219_common_res1.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_common.so:system/vendor/lib/libchromatix_imx219_common.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_default_video.so:system/vendor/lib/libchromatix_imx219_default_video.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_liveshot.so:system/vendor/lib/libchromatix_imx219_liveshot.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_panorama.so:system/vendor/lib/libchromatix_imx219_panorama.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_preview.so:system/vendor/lib/libchromatix_imx219_preview.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_snapshot.so:system/vendor/lib/libchromatix_imx219_snapshot.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_video_hd.so:system/vendor/lib/libchromatix_imx219_video_hd.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_zslshot.so:system/vendor/lib/libchromatix_imx219_zslshot.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_imx219.so:system/vendor/lib/libmmcamera_imx219.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_zsl.so:system/vendor/lib/libchromatix_imx219_zsl.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_s5k5e3yx_wide_common.so:system/vendor/lib/libchromatix_s5k5e3yx_wide_common.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_s5k5e3yx_wide_pip.so:system/vendor/lib/libchromatix_s5k5e3yx_wide_pip.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_s5k5e3yx_wide_preview.so:system/vendor/lib/libchromatix_s5k5e3yx_wide_preview.so \
@@ -94,6 +124,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_image_stab.so:system/vendor/lib/libmmcamera_image_stab.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_imx219.so:system/vendor/lib/libmmcamera_imx219.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so:system/vendor/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_rohm_brce064gwz_eeprom.so:system/vendor/lib/libmmcamera_rohm_brce064gwz_eeprom.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_s5k5e3yx.so:system/vendor/lib/libmmcamera_s5k5e3yx.so \
@@ -220,20 +251,20 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libscale.so:system/vendor/lib/libscale.so
 	
 #Kernel Modules
-#PRODUCT_COPY_FILES += \
-#	$(PROPRIETARY_PATH)/lib/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
-#	$(PROPRIETARY_PATH)/lib/modules/dma_test.ko:system/lib/modules/dma_test.ko \
-#	$(PROPRIETARY_PATH)/lib/modules/evbug.ko:system/lib/modules/evbug.ko \
-#	$(PROPRIETARY_PATH)/lib/modules/ice40-hcd.ko:system/lib/modules/ice40-hcd.ko \
-#	$(PROPRIETARY_PATH)/lib/modules/mmc_block_test.ko:system/lib/modules/mmc_block_test.ko \
-#	$(PROPRIETARY_PATH)/lib/modules/mmc_test.ko:system/lib/modules/mmc_test.ko \
-#	$(PROPRIETARY_PATH)/lib/modules/oprofile.ko:system/lib/modules/oprofile.ko \
-#	$(PROPRIETARY_PATH)/lib/modules/pronto/pronto_wlan.ko:system/lib/modules/pronto/pronto_wlan.ko \
-#	$(PROPRIETARY_PATH)/lib/modules/radio-iris-transport.ko:system/lib/modules/radio-iris-transport.ko \
-#	$(PROPRIETARY_PATH)/lib/modules/spidev.ko:system/lib/modules/spidev.ko \
-#	$(PROPRIETARY_PATH)/lib/modules/tcp_htcp.ko:system/lib/modules/tcp_htcp.ko \
-#	$(PROPRIETARY_PATH)/lib/modules/tcp_westwood.ko:system/lib/modules/tcp_westwood.ko \
-#	$(PROPRIETARY_PATH)/lib/modules/test-iosched.ko:system/lib/modules/test-iosched.ko
+PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/lib/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
+	$(PROPRIETARY_PATH)/lib/modules/dma_test.ko:system/lib/modules/dma_test.ko \
+	$(PROPRIETARY_PATH)/lib/modules/evbug.ko:system/lib/modules/evbug.ko \
+	$(PROPRIETARY_PATH)/lib/modules/ice40-hcd.ko:system/lib/modules/ice40-hcd.ko \
+	$(PROPRIETARY_PATH)/lib/modules/mmc_block_test.ko:system/lib/modules/mmc_block_test.ko \
+	$(PROPRIETARY_PATH)/lib/modules/mmc_test.ko:system/lib/modules/mmc_test.ko \
+	$(PROPRIETARY_PATH)/lib/modules/oprofile.ko:system/lib/modules/oprofile.ko \
+	$(PROPRIETARY_PATH)/lib/modules/pronto/pronto_wlan.ko:system/lib/modules/pronto/pronto_wlan.ko \
+	$(PROPRIETARY_PATH)/lib/modules/radio-iris-transport.ko:system/lib/modules/radio-iris-transport.ko \
+	$(PROPRIETARY_PATH)/lib/modules/spidev.ko:system/lib/modules/spidev.ko \
+	$(PROPRIETARY_PATH)/lib/modules/tcp_htcp.ko:system/lib/modules/tcp_htcp.ko \
+	$(PROPRIETARY_PATH)/lib/modules/tcp_westwood.ko:system/lib/modules/tcp_westwood.ko \
+	$(PROPRIETARY_PATH)/lib/modules/test-iosched.ko:system/lib/modules/test-iosched.ko
 	
 #	$(PROPRIETARY_PATH)/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
 # Media
@@ -294,6 +325,9 @@ PRODUCT_COPY_FILES += \
 #	$(PROPRIETARY_PATH)/bin/ss_conn_daemon:system/bin/ss_conn_daemon \
 #Misc (Qualcomm?)
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/etc/mcc_otalookup.xml:system/etc/mcc_otalookup.xml \
+	$(PROPRIETARY_PATH)/etc/epdg_apns_conf.xml:system/etc/epdg_apns_conf.xml \
+	$(PROPRIETARY_PATH)/etc/plmn_delta.bin:system/etc/plmn_delta.bin \
 	$(PROPRIETARY_PATH)/etc/srm.bin:system/etc/srm.bin \
 	$(PROPRIETARY_PATH)/etc/spn-conf.xml:system/etc/spn-conf.xml \
 	$(PROPRIETARY_PATH)/bin/icd:system/bin/icd \
@@ -310,6 +344,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
 	$(PROPRIETARY_PATH)/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
 	$(PROPRIETARY_PATH)/vendor/lib/lib-imsrcscmclient.so:system/vendor/lib/lib-imsrcscmclient.so \
+	$(PROPRIETARY_PATH)/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
 	$(PROPRIETARY_PATH)/vendor/lib/lib-imsrcscmservice.so:system/vendor/lib/lib-imsrcscmservice.so \
 	$(PROPRIETARY_PATH)/vendor/lib/lib-imsrcscm.so:system/vendor/lib/lib-imsrcscm.so \
 	$(PROPRIETARY_PATH)/vendor/lib/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so \
@@ -329,6 +364,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmrtpdecoder.so:system/vendor/lib/libmmrtpdecoder.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libnative_audio_latency_jni.so:system/vendor/lib/libnative_audio_latency_jni.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libP11EncryptorDecryptor.so:system/vendor/lib/libP11EncryptorDecryptor.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqct_resampler.so:system/vendor/lib/libqct_resampler.so \
 	$(PROPRIETARY_PATH)/vendor/lib/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so \
 	$(PROPRIETARY_PATH)/vendor/lib/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so \
@@ -344,25 +380,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so
 	
-#	$(PROPRIETARY_PATH)/lib/libSecEmbms.so:system/lib/libSecEmbms.so \
-#	$(PROPRIETARY_PATH)/lib/libSecMMCodec.so:system/lib/libSecMMCodec.so \
-#	$(PROPRIETARY_PATH)/lib/libsec_devenc.so:system/lib/libsec_devenc.so \
-#	$(PROPRIETARY_PATH)/lib/libsec_ecryptfs.so:system/lib/libsec_ecryptfs.so \
-#	$(PROPRIETARY_PATH)/lib/libsec_km.so:system/lib/libsec_km.so \
-#	$(PROPRIETARY_PATH)/lib/libsec_ode_km.so:system/lib/libsec_ode_km.so \
-#	$(PROPRIETARY_PATH)/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
-#	$(PROPRIETARY_PATH)/lib/libseccameracore.so:system/lib/libseccameracore.so \
-#	$(PROPRIETARY_PATH)/lib/libsecface.so:system/lib/libsecface.so \
-#	$(PROPRIETARY_PATH)/lib/libsecfips.so:system/lib/libsecfips.so \
-#	$(PROPRIETARY_PATH)/lib/libsecimaging.so:system/lib/libsecimaging.so \
-#	$(PROPRIETARY_PATH)/lib/libsecjpegboard.so:system/lib/libsecjpegboard.so \
-#	$(PROPRIETARY_PATH)/lib/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
-#	$(PROPRIETARY_PATH)/lib/libsecjpegquram.so:system/lib/libsecjpegquram.so \
-#	$(PROPRIETARY_PATH)/lib/libseckeyprov.so:system/lib/libseckeyprov.so \
-#	$(PROPRIETARY_PATH)/lib/libsecmediarecorder_jni.so:system/lib/libsecmediarecorder_jni.so \
-#	$(PROPRIETARY_PATH)/lib/libsecopenssl_engine.so:system/lib/libsecopenssl_engine.so \
-#	$(PROPRIETARY_PATH)/lib/libsecpkcs11_engine.so:system/lib/libsecpkcs11_engine.so \
-
 # RIL
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
@@ -370,9 +387,11 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libsec-ril.so:system/lib/libsec-ril.so \
  	$(PROPRIETARY_PATH)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
 	$(PROPRIETARY_PATH)/lib/libsecril-client.so:system/lib/libsecril-client.so \
+	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/rilswitch/sec/lib/libreference-ril.so \
 	$(PROPRIETARY_PATH)/bin/rild:system/rilswitch/sec/bin/rild \
 	$(PROPRIETARY_PATH)/lib/libril.so:system/rilswitch/sec/lib/libril.so \
 	$(PROPRIETARY_PATH)/lib/librilutils.so:system/rilswitch/sec/lib/librilutils.so \
+	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/lib/libreference-ril.so \
 	$(PROPRIETARY_PATH)/bin/rild:system/bin/rild \
 	$(PROPRIETARY_PATH)/lib/libril.so:system/lib/libril.so \
 	$(PROPRIETARY_PATH)/lib/librilutils.so:system/lib/librilutils.so
@@ -380,6 +399,7 @@ PRODUCT_COPY_FILES += \
 # Radio
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/bridgemgrd:system/bin/bridgemgrd \
+ 	$(PROPRIETARY_PATH)/bin/olsrd:system/bin/olsrd \
 	$(PROPRIETARY_PATH)/bin/ddexe:system/bin/ddexe \
 	$(PROPRIETARY_PATH)/bin/smdexe:system/bin/smdexe \
 	$(PROPRIETARY_PATH)/bin/connfwexe:system/bin/connfwexe \
@@ -387,7 +407,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/at_distributor:system/bin/at_distributor \
 	$(PROPRIETARY_PATH)/bin/diag_uart_log:system/bin/diag_uart_log \
 	$(PROPRIETARY_PATH)/bin/netmgrd:system/bin/netmgrd \
-	$(PROPRIETARY_PATH)/bin/qmi_sfs_server:system/bin/qmi_sfs_server \
+	$(PROPRIETARY_PATH)/bin/qmiproxy:system/bin/qmiproxy \
 	$(PROPRIETARY_PATH)/bin/qmuxd:system/bin/qmuxd \
 	$(PROPRIETARY_PATH)/bin/radish:system/bin/radish \
 	$(PROPRIETARY_PATH)/bin/rfs_access:system/bin/rfs_access \
@@ -460,35 +480,44 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libaudiosa.so:system/lib/libaudiosa.so \
 	$(PROPRIETARY_PATH)/lib/hw/audio.primary.msm8916.so:system/lib/hw/audio.primary.msm8916.so \
 	$(PROPRIETARY_PATH)/lib/libdashplayer.so:system/lib/libdashplayer.so \
+	$(PROPRIETARY_PATH)/lib/lib_DNSe_NRSS_ver226.so:system/lib/lib_DNSe_NRSS_ver226.so \
     $(PROPRIETARY_PATH)/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so \
-	$(PROPRIETARY_PATH)/lib/lib_SA_GoogleFX_ver124b.so:system/lib/lib_SA_GoogleFX_ver124b.so \
-	$(PROPRIETARY_PATH)/lib/libSamsungPkcs11Wrapper.so:system/lib/libSamsungPkcs11Wrapper.so \
-	$(PROPRIETARY_PATH)/lib/libSamsungPostProcess.so:system/lib/libSamsungPostProcess.so \
-	$(PROPRIETARY_PATH)/lib/libSamsungPreProcess.so:system/lib/libSamsungPreProcess.so \
-	$(PROPRIETARY_PATH)/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
-	$(PROPRIETARY_PATH)/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
-	$(PROPRIETARY_PATH)/lib/libsamsungVoipResampler.so:system/lib/libsamsungVoipResampler.so \
+	$(PROPRIETARY_PATH)/lib/lib_SA_GoogleFX_ver119k.so:system/lib/lib_SA_GoogleFX_ver119k.so \
+	$(PROPRIETARY_PATH)/lib/lib_Samsung_AudioZoom_v102.so:system/lib/lib_Samsung_AudioZoom_v102.so \
+	$(PROPRIETARY_PATH)/lib/libmysound.so:system/lib/libmysound.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungearcare.so:system/lib/libsamsungearcare.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungeffect.so:system/lib/libsamsungeffect.so \
+	$(PROPRIETARY_PATH)/lib/libSamsungMusic_v4.so:system/lib/libSamsungMusic_v4.so \
+	$(PROPRIETARY_PATH)/lib/libSamsungPDLComposer_MD2.so:system/lib/libSamsungPDLComposer_MD2.so \
+	$(PROPRIETARY_PATH)/lib/libSamsungPkcs11Wrapper.so:system/lib/libSamsungPkcs11Wrapper.so \
+	$(PROPRIETARY_PATH)/lib/libSamsungPostProcess.so:system/lib/libSamsungPostProcess.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungpowersound.so:system/lib/libsamsungpowersound.so \
+	$(PROPRIETARY_PATH)/lib/libSamsungPreProcess.so:system/lib/libSamsungPreProcess.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungRecord_ns.so:system/lib/libsamsungRecord_ns.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungRecord_zoom.so:system/lib/libsamsungRecord_zoom.so \
 	$(PROPRIETARY_PATH)/lib/lib_SamsungRec_V04012.so:system/lib/lib_SamsungRec_V04012.so \
 	$(PROPRIETARY_PATH)/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
-	$(PROPRIETARY_PATH)/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
-	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_SRC192_ver205.so:system/lib/lib_SoundAlive_SRC192_ver205.so \
-	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_play_ver125e.so:system/lib/lib_SoundAlive_play_ver125e.so \
-	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_ver118t.so:system/lib/lib_SoundAlive_ver118t.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungSoundbooster_ext.so:system/lib/libsamsungSoundbooster_ext.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungSoundbooster_pgb.so:system/lib/libsamsungSoundbooster_pgb.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungtts.so:system/lib/libsamsungtts.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungvad.so:system/lib/libsamsungvad.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungVoipResampler.so:system/lib/libsamsungVoipResampler.so \
+	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_play_plus_ver126a.so:system/lib/lib_SoundAlive_play_plus_ver126a.so \
 	$(PROPRIETARY_PATH)/lib/lib_soundaliveresampler.so:system/lib/lib_soundaliveresampler.so \
+	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_SRC192_ver205.so:system/lib/lib_SoundAlive_SRC192_ver205.so \
+	$(PROPRIETARY_PATH)/lib/lib_SoundBooster_ver608.so:system/lib/lib_SoundBooster_ver608.so \
+	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_3DPosition_ver107.so:system/lib/lib_SoundAlive_3DPosition_ver107.so \
+	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_ver118t.so:system/lib/lib_SoundAlive_ver118t.so \
 	$(PROPRIETARY_PATH)/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so \
-	$(PROPRIETARY_PATH)/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
+	$(PROPRIETARY_PATH)/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libbundlewrapper.so:system/lib/soundfx/libbundlewrapper.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libdownmix.so:system/lib/soundfx/libdownmix.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libldnhncr.so:system/lib/soundfx/libldnhncr.so \
-	$(PROPRIETARY_PATH)/lib/soundfx/libqcompostprocbundle.so:system/lib/soundfx/libqcompostprocbundle.so \
-	$(PROPRIETARY_PATH)/lib/soundfx/libqcomvisualizer.so:system/lib/soundfx/libqcomvisualizer.so \
-	$(PROPRIETARY_PATH)/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
+	$(PROPRIETARY_PATH)/lib/soundfx/libmyspace.so:system/lib/soundfx/libmyspace.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libreverbwrapper.so:system/lib/soundfx/libreverbwrapper.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
@@ -716,6 +745,7 @@ PRODUCT_COPY_FILES += \
 #	$(PROPRIETARY_PATH)/lib/libsnaace.so:system/lib/libsnaace.so \
 #	$(PROPRIETARY_PATH)/lib/libsnamrnb.so:system/lib/libsnamrnb.so \
 #	$(PROPRIETARY_PATH)/lib/libsnamrwb.so:system/lib/libsnamrwb.so \
+#	$(PROPRIETARY_PATH)/lib/libsomp.so:system/lib/libsomp.so \
 #	$(PROPRIETARY_PATH)/lib/libsomx263dsw.so:system/lib/libsomx263dsw.so \
 #	$(PROPRIETARY_PATH)/lib/libsomx264dsw.so:system/lib/libsomx264dsw.so \
 #	$(PROPRIETARY_PATH)/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
@@ -727,9 +757,16 @@ PRODUCT_COPY_FILES += \
 #	$(PROPRIETARY_PATH)/lib/libsomxflacd.so:system/lib/libsomxflacd.so \
 #	$(PROPRIETARY_PATH)/lib/libsomxhevcdsw.so:system/lib/libsomxhevcdsw.so \
 #	$(PROPRIETARY_PATH)/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxmp43d.so:system/lib/libsomxmp43d.so \
 #	$(PROPRIETARY_PATH)/lib/libsomxmp4vdsw.so:system/lib/libsomxmp4vdsw.so \
 #	$(PROPRIETARY_PATH)/lib/libsomxnaace.so:system/lib/libsomxnaace.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxsr263d.so:system/lib/libsomxsr263d.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxvc1dsw.so:system/lib/libsomxvc1dsw.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxvencsw.so:system/lib/libsomxvencsw.so \
 #	$(PROPRIETARY_PATH)/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
+#	$(PROPRIETARY_PATH)/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \
 #	$(PROPRIETARY_PATH)/lib/libsoundalive.so:system/lib/libsoundalive.so \
 #	$(PROPRIETARY_PATH)/lib/libSoundAlive_VSP_ver315b_arm.so:system/lib/libSoundAlive_VSP_ver315b_arm.so \
 #	$(PROPRIETARY_PATH)/lib/libsoundspeed.so:system/lib/libsoundspeed.so \
