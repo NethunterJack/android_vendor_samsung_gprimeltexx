@@ -1,4 +1,4 @@
-PROPRIETARY_PATH := vendor/samsung/gprimeltecan/proprietary
+PROPRIETARY_PATH := vendor/samsung/gprimeltetmo/proprietary
 
 # ADSP
 PRODUCT_COPY_FILES += \
