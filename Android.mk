@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),gprimeltetmo)
+ifeq ($(TARGET_DEVICE),gprimeltexx)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
