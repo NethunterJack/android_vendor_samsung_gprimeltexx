@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BLOB_FILE=gprimeltetmo-vendor-blobs.mk
+BLOB_FILE=gprimeltexx-vendor-blobs.mk
 PROP_DIR=proprietary
 
 RED='\033[1;31m'
