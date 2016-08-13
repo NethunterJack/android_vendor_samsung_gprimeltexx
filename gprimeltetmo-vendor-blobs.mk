@@ -33,35 +33,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
 	$(PROPRIETARY_PATH)/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-	$(PROPRIETARY_PATH)/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
-	$(PROPRIETARY_PATH)/cameradata/ThemeShot/MaskInfo_v2_download.conf:system/cameradata/ThemeShot/MaskInfo_v2_download.conf \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libcartoon.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libcartoon.so \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libfadedcolours.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libfadedcolours.so \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libfisheye.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libfisheye.so \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libgreyscale.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libgreyscale.so \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libmoody.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libmoody.so \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.liboilpastel.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.liboilpastel.so \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.librugged.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.librugged.so \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libsepia.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libsepia.so \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libtint.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libtint.so \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libturquoise.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libturquoise.so \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libvignette.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libvignette.so \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libvintage.so:system/cameradata/preloadfilters/Lib/arm/com.samsung.android.provider.filterprovider.libvintage.so \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libcartoon.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libcartoon.png \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libfadedcolours.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libfadedcolours.png \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libfisheye.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libfisheye.png \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libgreyscale.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libgreyscale.png \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libmoody.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libmoody.png \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.liboilpastel.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.liboilpastel.png \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.librugged.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.librugged.png \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libsepia.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libsepia.png \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libtint.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libtint.png \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libturquoise.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libturquoise.png \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libvignette.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libvignette.png \
-	$(PROPRIETARY_PATH)/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libvintage.png:system/cameradata/preloadfilters/Res/com.samsung.android.provider.filterprovider.libvintage.png \
 	$(PROPRIETARY_PATH)/cameradata/preloadfilters/internal_filter.xml:system/cameradata/preloadfilters/internal_filter.xml \
-	$(PROPRIETARY_PATH)/cameradata/secvision/golfShot/golf_shot_icon.png:system/cameradata/secvision/golfShot/golf_shot_icon.png \
-	$(PROPRIETARY_PATH)/cameradata/secvision/soundshot/sound_shot_icon.png:system/cameradata/secvision/soundshot/sound_shot_icon.png \
 	$(PROPRIETARY_PATH)/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
 	$(PROPRIETARY_PATH)/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
 	$(PROPRIETARY_PATH)/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
@@ -85,17 +57,15 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libqomx_core.so:system/lib/libqomx_core.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libactuator_dw9804_kleos_camcorder.so:system/vendor/lib/libactuator_dw9804_kleos_camcorder.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libactuator_dw9804_kleos_camera.so:system/vendor/lib/libactuator_dw9804_kleos_camera.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_common_res0.so:system/vendor/lib/libchromatix_imx219_common_res0.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_common_res1.so:system/vendor/lib/libchromatix_imx219_common_res1.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_common.so:system/vendor/lib/libchromatix_imx219_common.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_common_res0.so:system/vendor/lib/libchromatix_imx219_common_res0.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_default_video.so:system/vendor/lib/libchromatix_imx219_default_video.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_liveshot.so:system/vendor/lib/libchromatix_imx219_liveshot.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_panorama.so:system/vendor/lib/libchromatix_imx219_panorama.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_preview.so:system/vendor/lib/libchromatix_imx219_preview.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_snapshot.so:system/vendor/lib/libchromatix_imx219_snapshot.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_video_hd.so:system/vendor/lib/libchromatix_imx219_video_hd.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_zslshot.so:system/vendor/lib/libchromatix_imx219_zslshot.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_imx219_zsl.so:system/vendor/lib/libchromatix_imx219_zsl.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_imx219.so:system/vendor/lib/libmmcamera_imx219.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_s5k5e3yx_wide_common.so:system/vendor/lib/libchromatix_s5k5e3yx_wide_common.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_s5k5e3yx_wide_pip.so:system/vendor/lib/libchromatix_s5k5e3yx_wide_pip.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_s5k5e3yx_wide_preview.so:system/vendor/lib/libchromatix_s5k5e3yx_wide_preview.so \
@@ -124,7 +94,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_image_stab.so:system/vendor/lib/libmmcamera_image_stab.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_imx219.so:system/vendor/lib/libmmcamera_imx219.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so:system/vendor/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_rohm_brce064gwz_eeprom.so:system/vendor/lib/libmmcamera_rohm_brce064gwz_eeprom.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_s5k5e3yx.so:system/vendor/lib/libmmcamera_s5k5e3yx.so \
@@ -404,7 +373,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/rild:system/rilswitch/sec/bin/rild \
 	$(PROPRIETARY_PATH)/lib/libril.so:system/rilswitch/sec/lib/libril.so \
 	$(PROPRIETARY_PATH)/lib/librilutils.so:system/rilswitch/sec/lib/librilutils.so \
-	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/lib/libreference-ril.so \
 	$(PROPRIETARY_PATH)/bin/rild:system/bin/rild \
 	$(PROPRIETARY_PATH)/lib/libril.so:system/lib/libril.so \
 	$(PROPRIETARY_PATH)/lib/librilutils.so:system/lib/librilutils.so
@@ -412,7 +380,6 @@ PRODUCT_COPY_FILES += \
 # Radio
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/bridgemgrd:system/bin/bridgemgrd \
- 	$(PROPRIETARY_PATH)/bin/olsrd:system/bin/olsrd \
 	$(PROPRIETARY_PATH)/bin/ddexe:system/bin/ddexe \
 	$(PROPRIETARY_PATH)/bin/smdexe:system/bin/smdexe \
 	$(PROPRIETARY_PATH)/bin/connfwexe:system/bin/connfwexe \
@@ -495,7 +462,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libdashplayer.so:system/lib/libdashplayer.so \
     $(PROPRIETARY_PATH)/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so \
 	$(PROPRIETARY_PATH)/lib/lib_SA_GoogleFX_ver124b.so:system/lib/lib_SA_GoogleFX_ver124b.so \
-	$(PROPRIETARY_PATH)/lib/lib_Samsung_AudioZoom_v102.so:system/lib/lib_Samsung_AudioZoom_v102.so \
 	$(PROPRIETARY_PATH)/lib/libSamsungPkcs11Wrapper.so:system/lib/libSamsungPkcs11Wrapper.so \
 	$(PROPRIETARY_PATH)/lib/libSamsungPostProcess.so:system/lib/libSamsungPostProcess.so \
 	$(PROPRIETARY_PATH)/lib/libSamsungPreProcess.so:system/lib/libSamsungPreProcess.so \
