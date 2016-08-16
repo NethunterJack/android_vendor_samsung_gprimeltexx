@@ -16,7 +16,9 @@ PRODUCT_COPY_FILES += \
 #Misc (media) 	
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so
+	$(PROPRIETARY_PATH)/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
+	$(PROPRIETARY_PATH)/etc/firmware/wcd9306/wcd9306_anc.bin:system/etc/firmware/wcd9306/wcd9306_anc.bin \
+	$(PROPRIETARY_PATH)/etc/firmware/wcd9306/wcd9306_mbhc.bin:system/etc/firmware/wcd9306/wcd9306_mbhc.bin
 	
 # Bluetooth
 PRODUCT_COPY_FILES += \
@@ -106,23 +108,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
 	$(PROPRIETARY_PATH)/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
-
-# Battery animations
-PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/media/battery_cover.spi:system/media/battery_cover.spi \
-	$(PROPRIETARY_PATH)/media/battery_error.spi:system/media/battery_error.spi \
-	$(PROPRIETARY_PATH)/media/battery_low.spi:system/media/battery_low.spi \
-	$(PROPRIETARY_PATH)/media/battery_temperature_error.spi:system/media/battery_temperature_error.spi \
-	$(PROPRIETARY_PATH)/media/battery_temperature_limit.spi:system/media/battery_temperature_limit.spi \
-	$(PROPRIETARY_PATH)/media/dock_error.spi:system/media/dock_error.spi \
-	$(PROPRIETARY_PATH)/media/incompatible_charger.spi:system/media/incompatible_charger.spi \
-	$(PROPRIETARY_PATH)/media/lcd_density.txt:system/media/lcd_density.txt \
-	$(PROPRIETARY_PATH)/media/particle_intro.spi:system/media/particle_intro.spi \
-	$(PROPRIETARY_PATH)/media/particle_loop.spi:system/media/particle_loop.spi \
-	$(PROPRIETARY_PATH)/media/percentage.spi:system/media/percentage.spi \
-	$(PROPRIETARY_PATH)/media/wave_loop.spi:system/media/wave_loop.spi \
-	$(PROPRIETARY_PATH)/media/wireless_left.spi:system/media/wireless_left.spi \
-	$(PROPRIETARY_PATH)/media/wireless_right.spi:system/media/wireless_right.spi
 
 # DRM
 PRODUCT_COPY_FILES += \
