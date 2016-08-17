@@ -7,18 +7,17 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so
 
 #IMS SERVICE
-#PRODUCT_COPY_FILES += \
-#	$(PROPRIETARY_PATH)/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
-#	$(PROPRIETARY_PATH)/bin/imscmservice:system/bin/imscmservice \
-#	$(PROPRIETARY_PATH)/bin/imsdatadaemon:system/bin/imsdatadaemon \
-#	$(PROPRIETARY_PATH)/bin/imsqmidaemon:system/bin/imsqmidaemon
+PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
+	$(PROPRIETARY_PATH)/bin/imscmservice:system/bin/imscmservice \
+	$(PROPRIETARY_PATH)/bin/imsdatadaemon:system/bin/imsdatadaemon \
+	$(PROPRIETARY_PATH)/bin/imsqmidaemon:system/bin/imsqmidaemon \
+	$(PROPRIETARY_PATH)/lib/libSECIMSJni.so:system/lib/libSECIMSJni.so
 
 #Misc (media) 	
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
-	$(PROPRIETARY_PATH)/etc/firmware/wcd9306/wcd9306_anc.bin:system/etc/firmware/wcd9306/wcd9306_anc.bin \
-	$(PROPRIETARY_PATH)/etc/firmware/wcd9306/wcd9306_mbhc.bin:system/etc/firmware/wcd9306/wcd9306_mbhc.bin
+	$(PROPRIETARY_PATH)/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so
 	
 # Bluetooth
 PRODUCT_COPY_FILES += \
@@ -347,6 +346,7 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_COPY_FILES += \
+    $(PROPRIETARY_PATH)/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
 	$(PROPRIETARY_PATH)/bin/bridgemgrd:system/bin/bridgemgrd \
 	$(PROPRIETARY_PATH)/bin/ddexe:system/bin/ddexe \
 	$(PROPRIETARY_PATH)/bin/smdexe:system/bin/smdexe \
@@ -355,7 +355,11 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/at_distributor:system/bin/at_distributor \
 	$(PROPRIETARY_PATH)/bin/diag_uart_log:system/bin/diag_uart_log \
 	$(PROPRIETARY_PATH)/bin/netmgrd:system/bin/netmgrd \
-	$(PROPRIETARY_PATH)/bin/qmi_sfs_server:system/bin/qmi_sfs_server \
+	$(PROPRIETARY_PATH)/bin/qmiproxy:system/bin/qmiproxy \
+    $(PROPRIETARY_PATH)/bin/ftm_ptt:system/bin/ftm_ptt \
+    $(PROPRIETARY_PATH)/bin/ptt_socket_app:system/bin/ptt_socket_app \
+    $(PROPRIETARY_PATH)/lib/libqsap_sdk.so:system/lib/libqsap_sdk.so \
+    $(PROPRIETARY_PATH)/bin/port-bridge:system/bin/port-bridge \
 	$(PROPRIETARY_PATH)/bin/qmuxd:system/bin/qmuxd \
 	$(PROPRIETARY_PATH)/bin/radish:system/bin/radish \
 	$(PROPRIETARY_PATH)/bin/rfs_access:system/bin/rfs_access \
@@ -389,6 +393,7 @@ PRODUCT_COPY_FILES += \
 # Other
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/ssr_diag:system/bin/ssr_diag \
+	$(PROPRIETARY_PATH)/bin/wdsdaemon:system/bin/wdsdaemon \
 	$(PROPRIETARY_PATH)/bin/ssr_setup:system/bin/ssr_setup \
 	$(PROPRIETARY_PATH)/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
 	$(PROPRIETARY_PATH)/lib/libatparser.so:system/lib/libatparser.so \
@@ -474,6 +479,8 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libreverbwrapper.so:system/lib/soundfx/libreverbwrapper.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
+    $(PROPRIETARY_PATH)/proprietary/etc/firmware/wcd9306/wcd9306_anc.bin:system/etc/firmware/wcd9306/wcd9306_anc.bin \
+    $(PROPRIETARY_PATH)/proprietary/etc/firmware/wcd9306/wcd9306_mbhc.bin:system/etc/firmware/wcd9306/wcd9306_mbhc.bin \
 	$(PROPRIETARY_PATH)/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
@@ -483,7 +490,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
 	$(PROPRIETARY_PATH)/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
 	$(PROPRIETARY_PATH)/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
-	$(PROPRIETARY_PATH)/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so	
+    $(PROPRIETARY_PATH)/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
 # FM Radio
 PRODUCT_COPY_FILES += \
