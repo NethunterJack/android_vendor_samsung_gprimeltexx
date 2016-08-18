@@ -7,12 +7,12 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so
 
 #IMS SERVICE
-PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
-	$(PROPRIETARY_PATH)/bin/imscmservice:system/bin/imscmservice \
-	$(PROPRIETARY_PATH)/bin/imsdatadaemon:system/bin/imsdatadaemon \
-	$(PROPRIETARY_PATH)/bin/imsqmidaemon:system/bin/imsqmidaemon \
-	$(PROPRIETARY_PATH)/lib/libSECIMSJni.so:system/lib/libSECIMSJni.so
+#PRODUCT_COPY_FILES += \
+#	$(PROPRIETARY_PATH)/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
+#	$(PROPRIETARY_PATH)/bin/imscmservice:system/bin/imscmservice \
+#	$(PROPRIETARY_PATH)/bin/imsdatadaemon:system/bin/imsdatadaemon \
+#	$(PROPRIETARY_PATH)/bin/imsqmidaemon:system/bin/imsqmidaemon \
+#	$(PROPRIETARY_PATH)/lib/libSECIMSJni.so:system/lib/libSECIMSJni.so
 
 #Misc (media) 	
 PRODUCT_COPY_FILES += \
@@ -333,9 +333,9 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libril.so:system/lib/libril.so \
 	$(PROPRIETARY_PATH)/lib/librilutils.so:system/lib/librilutils.so
 
+#    $(PROPRIETARY_PATH)/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
 # Radio
 PRODUCT_COPY_FILES += \
-    $(PROPRIETARY_PATH)/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
 	$(PROPRIETARY_PATH)/bin/bridgemgrd:system/bin/bridgemgrd \
 	$(PROPRIETARY_PATH)/bin/ddexe:system/bin/ddexe \
 	$(PROPRIETARY_PATH)/bin/smdexe:system/bin/smdexe \
