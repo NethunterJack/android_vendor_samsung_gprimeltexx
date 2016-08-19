@@ -34,6 +34,18 @@ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_SRC_FILES    := proprietary/lib/libloc_eng.so
 include $(BUILD_PREBUILT)
 
+######################
+
+### libdashplayer
+include $(CLEAR_VARS)
+LOCAL_MODULE       := libdashplayer
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_OWNER := qcom
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_SRC_FILES    := proprietary/lib/libdashplayer.so
+include $(BUILD_PREBUILT)
+
 #######################
 #### libril
 #include $(CLEAR_VARS)
