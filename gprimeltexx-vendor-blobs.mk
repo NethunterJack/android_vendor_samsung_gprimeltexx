@@ -447,6 +447,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libaudioroute.so:system/lib/libaudioroute.so \
 	$(PROPRIETARY_PATH)/lib/libaudiosa.so:system/lib/libaudiosa.so \
+	$(PROPRIETARY_PATH)/lib/libdashplayer.so:system/lib/libdashplayer.so \
 	$(PROPRIETARY_PATH)/lib/hw/audio.primary.msm8916.so:system/lib/hw/audio.primary.msm8916.so \
     $(PROPRIETARY_PATH)/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so \
 	$(PROPRIETARY_PATH)/lib/lib_SA_GoogleFX_ver124b.so:system/lib/lib_SA_GoogleFX_ver124b.so \
