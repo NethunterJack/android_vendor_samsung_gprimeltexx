@@ -185,6 +185,7 @@ PRODUCT_COPY_FILES += \
 
 #MISC (Sensors?)
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/lib/libminui.so:system/lib/libminui.so \
 	$(PROPRIETARY_PATH)/vendor/lib/mmi_audio.so:system/vendor/lib/mmi_audio.so \
 	$(PROPRIETARY_PATH)/vendor/lib/mmi_battery.so:system/vendor/lib/mmi_battery.so \
 	$(PROPRIETARY_PATH)/vendor/lib/mmi_bt.so:system/vendor/lib/mmi_bt.so \
@@ -212,6 +213,7 @@ PRODUCT_COPY_FILES += \
 
 #MISC
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/lib/libtinyxml.so:system/lib/libtinyxml.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libCommandSvc.so:system/vendor/lib/libCommandSvc.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
@@ -313,6 +315,10 @@ PRODUCT_COPY_FILES += \
 	
 # Radio
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/bin/ddexe:system/bin/ddexe \
+	$(PROPRIETARY_PATH)/bin/smdexe:system/bin/smdexe \
+	$(PROPRIETARY_PATH)/bin/connfwexe:system/bin/connfwexe \
+	$(PROPRIETARY_PATH)/bin/ftm_ptt:system/bin/ftm_ptt \
 	$(PROPRIETARY_PATH)/bin/wlandutservice:system/bin/wlandutservice \
 	$(PROPRIETARY_PATH)/bin/netmgrd:system/bin/netmgrd \
 	$(PROPRIETARY_PATH)/bin/qmuxd:system/bin/qmuxd \
@@ -325,10 +331,14 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
+	$(PROPRIETARY_PATH)/lib/libseckeyprov.so:system/lib/libseckeyprov.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
+	$(PROPRIETARY_PATH)/lib/libatparser.so:system/lib/libatparser.so \
 	$(PROPRIETARY_PATH)/lib/libcordon.so:system/lib/libcordon.so \
 	$(PROPRIETARY_PATH)/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
+	$(PROPRIETARY_PATH)/lib/libgdmcprov.so:system/lib/libgdmcprov.so \
+	$(PROPRIETARY_PATH)/lib/libMcClient.so:system/lib/libMcClient.so \
 	$(PROPRIETARY_PATH)/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
 	$(PROPRIETARY_PATH)/lib/librmnetctl.so:system/lib/librmnetctl.so \
 	$(PROPRIETARY_PATH)/etc/plmn_se13.bin:system/etc/plmn_se13.bin
@@ -351,8 +361,9 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/ssr_diag:system/bin/ssr_diag \
 	$(PROPRIETARY_PATH)/bin/ssr_setup:system/bin/ssr_setup \
 	$(PROPRIETARY_PATH)/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
-	$(PROPRIETARY_PATH)/lib/libatparser.so:system/lib/libatparser.so \
 	$(PROPRIETARY_PATH)/lib/libhdcp2.so:system/lib/libhdcp2.so \
+	$(PROPRIETARY_PATH)/lib/libxml2.so:system/lib/libxml2.so \
+	$(PROPRIETARY_PATH)/lib/libtinycompress.so:system/lib/libtinycompress.so \
 	$(PROPRIETARY_PATH)/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
 	$(PROPRIETARY_PATH)/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
 	$(PROPRIETARY_PATH)/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
@@ -379,6 +390,9 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_SRC192_ver205.so:system/lib/lib_SoundAlive_SRC192_ver205.so \
 	$(PROPRIETARY_PATH)/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
 	$(PROPRIETARY_PATH)/lib/libSamsungPreProcess.so:system/lib/libSamsungPreProcess.so \
+	$(PROPRIETARY_PATH)/lib/libSamsungPostProcess.so:system/lib/libSamsungPostProcess.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
+	$(PROPRIETARY_PATH)/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
 	$(PROPRIETARY_PATH)/lib/lib_SamsungRec_V04012.so:system/lib/lib_SamsungRec_V04012.so \
 	$(PROPRIETARY_PATH)/lib/libaudioroute.so:system/lib/libaudioroute.so \
