@@ -185,7 +185,6 @@ PRODUCT_COPY_FILES += \
 
 #MISC (Sensors?)
 PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/lib/libminui.so:system/lib/libminui.so \
 	$(PROPRIETARY_PATH)/vendor/lib/mmi_audio.so:system/vendor/lib/mmi_audio.so \
 	$(PROPRIETARY_PATH)/vendor/lib/mmi_battery.so:system/vendor/lib/mmi_battery.so \
 	$(PROPRIETARY_PATH)/vendor/lib/mmi_bt.so:system/vendor/lib/mmi_bt.so \
@@ -210,6 +209,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/mmi_vibrator.so:system/vendor/lib/mmi_vibrator.so \
 	$(PROPRIETARY_PATH)/vendor/lib/mmi_volume.so:system/vendor/lib/mmi_volume.so \
 	$(PROPRIETARY_PATH)/vendor/lib/mmi_wifi.so:system/vendor/lib/mmi_wifi.so
+#	$(PROPRIETARY_PATH)/lib/libminui.so:system/lib/libminui.so \
 
 #MISC
 PRODUCT_COPY_FILES += \
@@ -315,10 +315,6 @@ PRODUCT_COPY_FILES += \
 	
 # Radio
 PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/bin/ddexe:system/bin/ddexe \
-	$(PROPRIETARY_PATH)/bin/smdexe:system/bin/smdexe \
-	$(PROPRIETARY_PATH)/bin/connfwexe:system/bin/connfwexe \
-	$(PROPRIETARY_PATH)/bin/ftm_ptt:system/bin/ftm_ptt \
 	$(PROPRIETARY_PATH)/bin/wlandutservice:system/bin/wlandutservice \
 	$(PROPRIETARY_PATH)/bin/netmgrd:system/bin/netmgrd \
 	$(PROPRIETARY_PATH)/bin/qmuxd:system/bin/qmuxd \
@@ -334,7 +330,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libseckeyprov.so:system/lib/libseckeyprov.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
-	$(PROPRIETARY_PATH)/lib/libatparser.so:system/lib/libatparser.so \
 	$(PROPRIETARY_PATH)/lib/libcordon.so:system/lib/libcordon.so \
 	$(PROPRIETARY_PATH)/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
 	$(PROPRIETARY_PATH)/lib/libgdmcprov.so:system/lib/libgdmcprov.so \
@@ -361,6 +356,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/ssr_diag:system/bin/ssr_diag \
 	$(PROPRIETARY_PATH)/bin/ssr_setup:system/bin/ssr_setup \
 	$(PROPRIETARY_PATH)/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
+	$(PROPRIETARY_PATH)/lib/libatparser.so:system/lib/libatparser.so \
 	$(PROPRIETARY_PATH)/lib/libhdcp2.so:system/lib/libhdcp2.so \
 	$(PROPRIETARY_PATH)/lib/libxml2.so:system/lib/libxml2.so \
 	$(PROPRIETARY_PATH)/lib/libtinycompress.so:system/lib/libtinycompress.so \
@@ -403,7 +399,10 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+	$(PROPRIETARY_PATH)/lib/soundfx/libqcomvisualizer.so:/system/lib/soundfx/libqcomvisualizer.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so \
+	$(PROPRIETARY_PATH)/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
+	$(PROPRIETARY_PATH)/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
 	$(PROPRIETARY_PATH)/lib/libaudiosa.so:system/lib/libaudiosa.so \
 	$(PROPRIETARY_PATH)/lib/lib_SA_GoogleFX_ver124b.so:system/lib/lib_SA_GoogleFX_ver124b.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
