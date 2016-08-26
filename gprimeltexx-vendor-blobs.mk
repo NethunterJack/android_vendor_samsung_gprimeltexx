@@ -9,8 +9,8 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
-	$(PROPRIETARY_PATH)/lib/libk303c.so:system/lib/libk303c.so \
 	$(PROPRIETARY_PATH)/lib/libalgobsx.so:system/lib/libalgobsx.so
+#	$(PROPRIETARY_PATH)/lib/libk303c.so:system/lib/libk303c.so \
 	
 # FM Radio
 PRODUCT_COPY_FILES += \
