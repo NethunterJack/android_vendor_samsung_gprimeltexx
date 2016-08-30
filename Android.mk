@@ -47,6 +47,18 @@ LOCAL_SRC_FILES    := proprietary/lib/libdashplayer.so
 include $(BUILD_PREBUILT)
 
 #######################
+
+### libHevcSwDecoder
+include $(CLEAR_VARS)
+LOCAL_MODULE       := libHevcSwDecoder
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_OWNER := qcom
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_SRC_FILES    := proprietary/vendor/lib/libHevcSwDecoder.so
+include $(BUILD_PREBUILT)
+
+#######################
 #### libril
 #include $(CLEAR_VARS)
 #LOCAL_MODULE       := libril
