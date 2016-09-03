@@ -359,6 +359,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
 	$(PROPRIETARY_PATH)/lib/libatparser.so:system/lib/libatparser.so \
 	$(PROPRIETARY_PATH)/lib/libhdcp2.so:system/lib/libhdcp2.so \
+	$(PROPRIETARY_PATH)/lib/libxml2.so:system/lib/libxml2.so \
 	$(PROPRIETARY_PATH)/lib/libtinycompress.so:system/lib/libtinycompress.so \
 	$(PROPRIETARY_PATH)/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
 	$(PROPRIETARY_PATH)/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
