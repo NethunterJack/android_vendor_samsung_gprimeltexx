@@ -321,7 +321,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/wlandutservice:system/bin/wlandutservice \
 	$(PROPRIETARY_PATH)/bin/netmgrd:system/bin/netmgrd \
 	$(PROPRIETARY_PATH)/bin/qmuxd:system/bin/qmuxd \
-	$(PROPRIETARY_PATH)/bin/qmiproxy:system/bin/qmiproxy \
 	$(PROPRIETARY_PATH)/bin/radish:system/bin/radish \
 	$(PROPRIETARY_PATH)/bin/rfs_access:system/bin/rfs_access \
 	$(PROPRIETARY_PATH)/bin/rmt_storage:system/bin/rmt_storage \
