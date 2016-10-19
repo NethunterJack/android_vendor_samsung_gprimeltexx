@@ -417,7 +417,8 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/calib_SI_matrix_data_file.dat:system/etc/calib_SI_matrix_data_file.dat \
 	$(PROPRIETARY_PATH)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
 	$(PROPRIETARY_PATH)/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so \
-	$(PROPRIETARY_PATH)/lib/libalgobsx.so:system/lib/libalgobsx.so
+	$(PROPRIETARY_PATH)/lib/libalgobsx.so:system/lib/libalgobsx.so \
+	$(PROPRIETARY_PATH)/lib/libsensorservice.so:system/lib/libsensorservice.so
 
 # Thermal
 PRODUCT_COPY_FILES += \
