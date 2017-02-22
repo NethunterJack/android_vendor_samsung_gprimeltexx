@@ -285,6 +285,7 @@ PRODUCT_COPY_FILES += \
 
 # Other
 PRODUCT_COPY_FILES += \
+    $(PROPRIETARY_PATH)/bin/adsprpcd:system/bin/adsprpcd \
     $(PROPRIETARY_PATH)/bin/ssr_diag:system/bin/ssr_diag \
     $(PROPRIETARY_PATH)/bin/ssr_setup:system/bin/ssr_setup \
     $(PROPRIETARY_PATH)/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
@@ -299,8 +300,11 @@ PRODUCT_COPY_FILES += \
     $(PROPRIETARY_PATH)/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
     $(PROPRIETARY_PATH)/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
     $(PROPRIETARY_PATH)/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
+    $(PROPRIETARY_PATH)/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
+    $(PROPRIETARY_PATH)/lib/hw/local_time.default.so:system/lib/hw/local_time.default.so \
     $(PROPRIETARY_PATH)/lib/libatparser.so:system/lib/libatparser.so \
-    $(PROPRIETARY_PATH)/lib/libhdcp2.so:system/lib/libhdcp2.so
+    $(PROPRIETARY_PATH)/lib/libhdcp2.so:system/lib/libhdcp2.so \
+    $(PROPRIETARY_PATH)/lib/libsamsungpowersound.so:system/lib/libsamsungpowersound.so
 
 # Perf
 PRODUCT_COPY_FILES += \
