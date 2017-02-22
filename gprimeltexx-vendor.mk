@@ -13,3 +13,5 @@
 # limitations under the License.
 
 $(call inherit-product, vendor/samsung/gprimeltexx/gprimeltexx-vendor-blobs.mk)
+
+PRODUCT_PACKAGES += libtime_genoff
