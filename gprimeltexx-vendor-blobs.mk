@@ -14,17 +14,12 @@ PRODUCT_COPY_FILES += \
     $(PROPRIETARY_PATH)/lib/lib_soundaliveresampler.so:system/lib/lib_soundaliveresampler.so \
     $(PROPRIETARY_PATH)/lib/libaudioroute.so:system/lib/libaudioroute.so \
     $(PROPRIETARY_PATH)/lib/libaudiosa.so:system/lib/libaudiosa.so \
-    $(PROPRIETARY_PATH)/lib/libdashplayer.so:system/lib/libdashplayer.so \
     $(PROPRIETARY_PATH)/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
     $(PROPRIETARY_PATH)/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
     $(PROPRIETARY_PATH)/lib/libsamsungVoipResampler.so:system/lib/libsamsungVoipResampler.so \
     $(PROPRIETARY_PATH)/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
     $(PROPRIETARY_PATH)/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so \
     $(PROPRIETARY_PATH)/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
-    $(PROPRIETARY_PATH)/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
-    $(PROPRIETARY_PATH)/lib/soundfx/libldnhncr.so:system/lib/soundfx/libldnhncr.so \
-    $(PROPRIETARY_PATH)/lib/soundfx/libqcomvisualizer.so:system/lib/soundfx/libqcomvisualizer.so \
-    $(PROPRIETARY_PATH)/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
     $(PROPRIETARY_PATH)/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     $(PROPRIETARY_PATH)/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     $(PROPRIETARY_PATH)/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
@@ -42,23 +37,7 @@ PRODUCT_COPY_FILES += \
 
 # Battery animations
 PRODUCT_COPY_FILES += \
-    $(PROPRIETARY_PATH)/bin/lpm:system/bin/lpm \
-    $(PROPRIETARY_PATH)/lib/libmaet.so:system/lib/libmaet.so \
-    $(PROPRIETARY_PATH)/lib/libsxqk_skia.so:system/lib/libsxqk_skia.so \
-    $(PROPRIETARY_PATH)/media/battery_cover.spi:system/media/battery_cover.spi \
-    $(PROPRIETARY_PATH)/media/battery_error.spi:system/media/battery_error.spi \
-    $(PROPRIETARY_PATH)/media/battery_low.spi:system/media/battery_low.spi \
-    $(PROPRIETARY_PATH)/media/battery_temperature_error.spi:system/media/battery_temperature_error.spi \
-    $(PROPRIETARY_PATH)/media/battery_temperature_limit.spi:system/media/battery_temperature_limit.spi \
-    $(PROPRIETARY_PATH)/media/dock_error.spi:system/media/dock_error.spi \
-    $(PROPRIETARY_PATH)/media/incompatible_charger.spi:system/media/incompatible_charger.spi \
-    $(PROPRIETARY_PATH)/media/lcd_density.txt:system/media/lcd_density.txt \
-    $(PROPRIETARY_PATH)/media/particle_intro.spi:system/media/particle_intro.spi \
-    $(PROPRIETARY_PATH)/media/particle_loop.spi:system/media/particle_loop.spi \
-    $(PROPRIETARY_PATH)/media/percentage.spi:system/media/percentage.spi \
-    $(PROPRIETARY_PATH)/media/wave_loop.spi:system/media/wave_loop.spi \
-    $(PROPRIETARY_PATH)/media/wireless_left.spi:system/media/wireless_left.spi \
-    $(PROPRIETARY_PATH)/media/wireless_right.spi:system/media/wireless_right.spi
+    $(PROPRIETARY_PATH)/bin/lpm:system/bin/lpm
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
@@ -152,7 +131,6 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_COPY_FILES += \
     $(PROPRIETARY_PATH)/bin/qseecomd:system/bin/qseecomd \
-    $(PROPRIETARY_PATH)/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
     $(PROPRIETARY_PATH)/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     $(PROPRIETARY_PATH)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(PROPRIETARY_PATH)/lib/libwvm.so:system/lib/libwvm.so \
@@ -168,18 +146,12 @@ PRODUCT_COPY_FILES += \
 
 # FM Radio
 PRODUCT_COPY_FILES += \
-    $(PROPRIETARY_PATH)/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
-    $(PROPRIETARY_PATH)/bin/fmconfig:system/bin/fmconfig
+    $(PROPRIETARY_PATH)/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches
 
 # GPS
 PRODUCT_COPY_FILES += \
     $(PROPRIETARY_PATH)/bin/irsc_util:system/bin/irsc_util \
     $(PROPRIETARY_PATH)/bin/loc_launcher:system/bin/loc_launcher \
-    $(PROPRIETARY_PATH)/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-    $(PROPRIETARY_PATH)/lib/libgps.utils.so:system/lib/libgps.utils.so \
-    $(PROPRIETARY_PATH)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    $(PROPRIETARY_PATH)/lib/libloc_core.so:system/lib/libloc_core.so \
-    $(PROPRIETARY_PATH)/lib/libloc_eng.so:system/lib/libloc_eng.so \
     $(PROPRIETARY_PATH)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     $(PROPRIETARY_PATH)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     $(PROPRIETARY_PATH)/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
@@ -187,15 +159,8 @@ PRODUCT_COPY_FILES += \
 
 # Graphics
 PRODUCT_COPY_FILES += \
-    $(PROPRIETARY_PATH)/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    $(PROPRIETARY_PATH)/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-    $(PROPRIETARY_PATH)/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
     $(PROPRIETARY_PATH)/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     $(PROPRIETARY_PATH)/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-    $(PROPRIETARY_PATH)/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
-    $(PROPRIETARY_PATH)/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
-    $(PROPRIETARY_PATH)/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
-    $(PROPRIETARY_PATH)/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
     $(PROPRIETARY_PATH)/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
     $(PROPRIETARY_PATH)/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     $(PROPRIETARY_PATH)/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
@@ -215,10 +180,6 @@ PRODUCT_COPY_FILES += \
     $(PROPRIETARY_PATH)/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
     $(PROPRIETARY_PATH)/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     $(PROPRIETARY_PATH)/vendor/lib/libscale.so:system/vendor/lib/libscale.so
-
-# Lights
-PRODUCT_COPY_FILES += \
-    $(PROPRIETARY_PATH)/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -270,7 +231,6 @@ PRODUCT_COPY_FILES += \
 
 #MISC
 PRODUCT_COPY_FILES += \
-    $(PROPRIETARY_PATH)/lib/libtinyxml.so:system/lib/libtinyxml.so \
     $(PROPRIETARY_PATH)/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
     $(PROPRIETARY_PATH)/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
     $(PROPRIETARY_PATH)/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
@@ -320,8 +280,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(PROPRIETARY_PATH)/etc/firmware/nfc_test.bin:system/etc/firmware/nfc_test.bin \
     $(PROPRIETARY_PATH)/etc/sec_s3fwrn5_rfreg.bin:system/etc/sec_s3fwrn5_rfreg.bin \
-    $(PROPRIETARY_PATH)/etc/security_nfc_profile.dat:system/etc/security_nfc_profile.dat \
-    $(PROPRIETARY_PATH)/etc/security_profile.dat:system/etc/security_profile.dat \
     $(PROPRIETARY_PATH)/vendor/firmware/sec_s3fwrn5_firmware.bin:system/vendor/firmware/sec_s3fwrn5_firmware.bin \
      $(PROPRIETARY_PATH)/lib/hw/nfc_nci.msm8916.so:system/lib/hw/nfc_nci.msm8916.so
 
@@ -342,9 +300,7 @@ PRODUCT_COPY_FILES += \
     $(PROPRIETARY_PATH)/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
     $(PROPRIETARY_PATH)/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
     $(PROPRIETARY_PATH)/lib/libatparser.so:system/lib/libatparser.so \
-    $(PROPRIETARY_PATH)/lib/libhdcp2.so:system/lib/libhdcp2.so \
-    $(PROPRIETARY_PATH)/lib/libtinycompress.so:system/lib/libtinycompress.so \
-    $(PROPRIETARY_PATH)/lib/libxml2.so:system/lib/libxml2.so
+    $(PROPRIETARY_PATH)/lib/libhdcp2.so:system/lib/libhdcp2.so
 
 # Perf
 PRODUCT_COPY_FILES += \
@@ -384,7 +340,6 @@ PRODUCT_COPY_FILES += \
     $(PROPRIETARY_PATH)/bin/radish:system/bin/radish \
     $(PROPRIETARY_PATH)/bin/rfs_access:system/bin/rfs_access \
     $(PROPRIETARY_PATH)/bin/rmt_storage:system/bin/rmt_storage \
-    $(PROPRIETARY_PATH)/bin/wlandutservice:system/bin/wlandutservice \
     $(PROPRIETARY_PATH)/etc/plmn_se13.bin:system/etc/plmn_se13.bin \
     $(PROPRIETARY_PATH)/lib/libMcClient.so:system/lib/libMcClient.so \
     $(PROPRIETARY_PATH)/lib/libcordon.so:system/lib/libcordon.so \
@@ -392,7 +347,6 @@ PRODUCT_COPY_FILES += \
     $(PROPRIETARY_PATH)/lib/libgdmcprov.so:system/lib/libgdmcprov.so \
     $(PROPRIETARY_PATH)/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     $(PROPRIETARY_PATH)/lib/librmnetctl.so:system/lib/librmnetctl.so \
-    $(PROPRIETARY_PATH)/lib/libseckeyprov.so:system/lib/libseckeyprov.so \
     $(PROPRIETARY_PATH)/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     $(PROPRIETARY_PATH)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     $(PROPRIETARY_PATH)/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
@@ -416,7 +370,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(PROPRIETARY_PATH)/etc/calib_SI_matrix_data_file.dat:system/etc/calib_SI_matrix_data_file.dat \
     $(PROPRIETARY_PATH)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
-    $(PROPRIETARY_PATH)/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so \
     $(PROPRIETARY_PATH)/lib/libalgobsx.so:system/lib/libalgobsx.so \
     $(PROPRIETARY_PATH)/lib/libsensorservice.so:system/lib/libsensorservice.so
 
